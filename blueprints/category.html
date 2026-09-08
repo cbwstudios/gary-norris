@@ -1,0 +1,359 @@
+<title>GGN Law, Homepage Comp</title>
+<style>
+:root{
+--blue-9:#0B2137;--blue-8:#12324E;--blue-7:#1B4A70;--blue-6:#1F5C93;--blue-5:#3079B2;
+--blue-4:#6CA5D1;--blue-3:#A3C6E2;--blue-2:#CFE2F1;--blue-1:#EAF3FA;
+--grey-9:#1B1F24;--grey-8:#2E353D;--grey-7:#454E58;--grey-6:#5D6874;--grey-5:#7C8794;
+--grey-4:#9AA4B0;--grey-3:#C3CAD2;--grey-2:#DFE4E9;--grey-1:#F4F6F8;
+--award:#C1651C;
+--ink-1:var(--grey-9);--ink-2:var(--grey-7);--ink-3:var(--grey-6);--ink-4:var(--grey-4);
+--head:var(--blue-8);--line:var(--grey-2);--line-2:var(--grey-3);
+--paper:#fff;--paper-2:var(--grey-1);--action:var(--blue-6);
+--amber-6:#8A5A00;--amber-1:#FDF0D8;
+--serif:"Source Serif 4",Charter,"Iowan Old Style",Georgia,Cambria,serif;
+--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--fs-0:.8125rem;--fs-1:.9375rem;--fs-2:1.125rem;--fs-3:1.3125rem;
+--fs-4:1.625rem;--fs-5:2.125rem;--fs-6:clamp(2.125rem,1.4rem + 3vw,3.25rem);
+--lh-tight:1.12;--lh-snug:1.22;--lh-head:1.3;--lh-lead:1.5;--lh-body:1.65;
+--measure:62ch;
+--s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.5rem;--s-6:2rem;--s-7:3rem;--s-8:4rem;
+--pad-sec:clamp(2.5rem,1.5rem + 3vw,4rem);--pad-major:clamp(3.5rem,2rem + 5vw,6rem);
+--r-1:4px;--r-2:8px;--r-3:12px;
+--shadow-2:0 4px 12px rgba(11,33,55,0.10),0 14px 34px rgba(11,33,55,0.10);
+--wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink-1);font-family:var(--sans);
+ font-size:var(--fs-2);line-height:var(--lh-body);font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;color:var(--head);font-weight:600}
+h1{font-size:var(--fs-6);line-height:var(--lh-tight);letter-spacing:-.022em;color:var(--blue-9)}
+h2{font-size:var(--fs-5);line-height:var(--lh-snug);letter-spacing:-.014em}
+h3{font-size:var(--fs-4);line-height:var(--lh-head)}
+h4{font-size:var(--fs-3);line-height:var(--lh-head)}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1rem.5rem + 2.5vw,2rem)}
+.sec{padding-block:var(--pad-sec)}
+.sec-major{padding-block:var(--pad-major)}
+.sec-tint{background:var(--paper-2)}
+
+.note{border-left:3px solid var(--amber-6);background:var(--amber-1);color:var(--amber-6);
+ padding:var(--s-3) var(--s-4);font-size:var(--fs-1);border-radius:0 var(--r-2) var(--r-2) 0;
+ max-width:var(--measure);margin-top:var(--s-5);line-height:1.5}
+.note k{display:block;font-size:var(--fs-0);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:2px}
+.dummy{color:var(--ink-4);font-style:italic;max-width:var(--measure);margin-top:var(--s-4)}
+
+.img{position:relative;border-radius:var(--r-2);overflow:hidden;
+ background:linear-gradient(140deg,var(--blue-8),var(--blue-6) 48%,var(--blue-4));
+ display:flex;align-items:flex-end;min-height:200px}
+.img::after{content:attr(data-label);display:block;width:100%;padding:var(--s-8) var(--s-4) var(--s-3);
+ color:#fff;font-size:var(--fs-0);letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+ background:linear-gradient(180deg,transparent,rgba(11,33,55,0.7))}
+.img-grey{background:linear-gradient(140deg,var(--grey-8),var(--grey-6) 55%,var(--grey-4))}
+
+.util{background:var(--blue-9);color:#C9D8E5;font-size:var(--fs-1)}
+.util .wrap{display:flex;justify-content:space-between;gap:var(--s-4);padding-block:var(--s-2);flex-wrap:wrap}
+.util a{color:#fff;font-weight:700;text-decoration:none}
+.hdr{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:100}
+.hdr .wrap{display:flex;align-items:center;gap:var(--s-6);padding-block:var(--s-4);flex-wrap:nowrap}
+.logo{flex:0 0 auto;text-decoration:none;font-family:var(--serif);font-size:var(--fs-3);
+ color:var(--blue-9);font-weight:600;line-height:1.15;letter-spacing:-.012em}
+.logo span{display:block;font-family:var(--sans);font-size:var(--fs-0);letter-spacing:.14em;
+ text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-top:4px}
+.nav{margin-left:auto}
+.nav-list{display:flex;align-items:center;gap:var(--s-2);list-style:none;margin:0;padding:0}
+.nav-item{position:relative}
+.nav-link{display:block;padding:var(--s-3);font-size:var(--fs-1);font-weight:600;color:var(--ink-2);
+ text-decoration:none;border-radius:var(--r-1);white-space:nowrap}
+.has-sub>.nav-link{padding-right:calc(var(--s-5) + 2px)}
+.nav-item:hover>.nav-link.nav-item:focus-within>.nav-link{color:var(--blue-7);background:var(--blue-1)}
+.nav-disc{position:absolute;inset-block:0;right:0;width:20px;border:0;background:none;cursor:pointer;padding:0}
+.nav-disc::after{content:"";display:block;width:6px;height:6px;margin-inline:auto;
+ border-right:2px solid var(--ink-4);border-bottom:2px solid var(--ink-4);transform:rotate(45deg) translateY(-2px)}
+.nav-item::after{content:"";position:absolute;top:100%;left:0;right:0;height:12px}
+.sub{position:absolute;top:calc(100% + 12px);left:0;z-index:60;min-width:300px;background:var(--paper);
+ border:1px solid var(--line);border-top:3px solid var(--blue-6);border-radius:0 0 var(--r-2) var(--r-2);
+ box-shadow:var(--shadow-2);padding:var(--s-5);opacity:0;visibility:hidden;transform:translateY(-4px);
+ transition:opacity .14s,transform .14s,visibility 0s .14s}
+.nav-item:hover>.sub.nav-item:focus-within>.sub{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.sub-mega{left:auto;right:0;width:min(860px,calc(100vw - 48px))}
+.sub-cols{display:grid;grid-template-columns:1fr 1fr .85fr;gap:var(--s-6)}
+.sub ul{list-style:none;margin:var(--s-3) 0 0;padding:0}
+.sub a{display:block;padding:var(--s-2) var(--s-3);border-radius:var(--r-1);font-size:var(--fs-1);
+ font-weight:500;color:var(--ink-2);text-decoration:none;line-height:1.4}
+.sub a:hover{background:var(--blue-1);color:var(--blue-8)}
+.sub-h{font-family:var(--serif);font-size:var(--fs-3);font-weight:600;color:var(--blue-8);margin:0}
+.sub-lede{font-size:var(--fs-1);color:var(--ink-3);margin-top:var(--s-2);line-height:1.45}
+.sub-all{font-weight:700;color:var(--blue-6);margin-top:var(--s-2)}
+.sub-aside{background:var(--blue-1);border-radius:var(--r-2);padding:var(--s-5);align-self:start}
+.sub-help{font-size:var(--fs-1);color:var(--ink-2);margin-top:var(--s-2);line-height:1.5}
+
+.btn{display:inline-block;font-weight:700;font-size:var(--fs-1);padding:var(--s-3) var(--s-5);
+ border-radius:var(--r-2);text-decoration:none;border:1px solid transparent;cursor:pointer;line-height:1.35}
+.btn-1{background:var(--action);color:#fff}
+.btn-1:hover{background:var(--blue-5)}
+.btn-2{background:var(--paper);color:var(--blue-8);border-color:var(--line-2)}
+.btn-row{display:flex;gap:var(--s-3);flex-wrap:wrap;margin-top:var(--s-6)}
+
+.hero{background:var(--blue-1);border-bottom:1px solid var(--line-2);padding-block:var(--pad-major)}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--s-7);align-items:stretch}
+.hero p.lead{font-size:var(--fs-3);line-height:var(--lh-lead);color:var(--ink-2);margin-top:var(--s-5);max-width:54ch}
+.hero-media{min-height:100%}
+
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:var(--s-6)}
+.trust-i{padding-inline:var(--s-6);display:flex;flex-direction:column;justify-content:flex-start}
+.trust-i:first-child{padding-left:0}
+.trust-i+.trust-i{border-left:1px solid var(--line)}
+.trust-i b{font-family:var(--serif);font-size:var(--fs-4);font-weight:600;color:var(--blue-8);
+ line-height:1.15;font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.01em}
+.trust-i span{font-size:var(--fs-0);color:var(--ink-3);margin-top:var(--s-2);line-height:1.45}
+.badge{display:inline-flex;align-items:center;gap:var(--s-3);border:1px solid #E3B98C;
+ border-radius:var(--r-2);padding:var(--s-2) var(--s-3);background:#FDF1E7;width:fit-content}
+.badge i{font-style:normal;font-family:var(--serif);font-weight:700;color:var(--award);font-size:var(--fs-4);line-height:1}
+.badge em{font-style:normal;font-size:var(--fs-0);color:var(--award);line-height:1.25;font-weight:700}
+
+.sec-head{max-width:var(--measure);margin-bottom:var(--s-7)}
+.sec-head h2{position:relative;padding-bottom:var(--s-4)}
+.sec-head h2::after{content:"";position:absolute;left:0;bottom:0;width:48px;height:3px;background:var(--blue-6)}
+.sec-head>p{margin-top:var(--s-4);font-size:var(--fs-3);color:var(--ink-2);line-height:var(--lh-lead)}
+
+.grid{display:grid;gap:var(--s-5)}
+.g2{grid-template-columns:repeat(2,1fr);gap:var(--s-7)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-2);padding:var(--s-5)}
+.card h3{font-size:var(--fs-3)}
+.card p{font-size:var(--fs-1);color:var(--ink-2);margin-top:var(--s-3);line-height:1.55}
+a.card{text-decoration:none;transition:background .12s,border-color .12s;display:block}
+a.card:hover{border-color:var(--blue-4);background:var(--blue-1)}
+.card .go{color:var(--blue-6);font-weight:700;font-size:var(--fs-1);margin-top:var(--s-4);display:block}
+
+.link-bank{display:grid;grid-template-columns:repeat(3,1fr);gap:0 var(--s-7);list-style:none;margin:0;padding:0}
+.link-bank a{display:block;padding:var(--s-3) 0;border-bottom:1px solid var(--line);
+ font-size:var(--fs-1);font-weight:600;color:var(--ink-2);text-decoration:none}
+.link-bank a:hover{color:var(--blue-6)}
+
+.results{background:var(--blue-9);color:#fff}
+.results .results h2{color:#fff}
+.results .sec-head h2::after{background:var(--blue-5)}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 var(--s-7)}
+.res{border-bottom:1px solid rgba(255,255,255,0.15);padding-block:var(--s-4)}
+.res b{display:block;font-family:var(--serif);font-size:var(--fs-4);color:#fff;font-weight:600;
+ font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.012em}
+.res span{display:block;font-size:var(--fs-1);color:#AEC2D4;margin-top:var(--s-1);line-height:1.45}
+.results .fine{color:#8FA6BC;font-size:var(--fs-1);margin-top:var(--s-6);max-width:var(--measure)}
+.results .btn-2{background:transparent;color:#fff;border-color:rgba(255,255,255,0.42)}
+
+.quote{border-left:3px solid var(--line-2);padding-left:var(--s-4);font-size:var(--fs-2);color:var(--ink-2);
+ font-style:italic;line-height:1.55;margin-top:var(--s-4)}
+.quote cite{display:block;font-style:normal;font-size:var(--fs-1);color:var(--ink-3);margin-top:var(--s-3)}
+.stars{color:var(--award);letter-spacing:.08em;font-size:var(--fs-2)}
+
+.ftr{background:var(--blue-9);color:#B9C9D8;font-size:var(--fs-1);padding:var(--s-8) 0 var(--s-6)}
+.ftr h4{font-family:var(--sans);font-size:var(--fs-0);font-weight:700;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--blue-3);margin-bottom:var(--s-4)}
+.ftr a{color:#DCE6EF;text-decoration:none;display:block;padding-block:var(--s-2)}
+.ftr a:hover{color:#fff}
+.ftr .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-6)}
+.ftr .legal{border-top:1px solid rgba(255,255,255,0.12);margin-top:var(--s-7);padding-top:var(--s-5);
+ font-size:var(--fs-0);color:#8FA6BC;line-height:1.6}
+.ftr .legal a{display:inline;color:#AEC2D4}
+
+@media(max-width:1080px){.nav-link{padding-inline:var(--s-2);font-size:var(--fs-0)}.hdr .wrap{gap:var(--s-4)}}
+@media(max-width:900px){.g3.res-grid.link-bank.sub-cols{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:840px){
+ .hero-grid{grid-template-columns:1fr}.hero-media{min-height:240px;order:-1}
+ .trust .wrap{grid-template-columns:repeat(2,1fr);gap:var(--s-5) 0}
+ .trust-i{padding-inline:var(--s-4)}.trust-i:nth-child(odd){border-left:0;padding-left:0}
+ .trust-i:nth-child(n+3){border-top:1px solid var(--line);padding-top:var(--s-5)}
+ .ftr .g4{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){.g2.g3.res-grid.link-bank.ftr .g4.sub-cols{grid-template-columns:1fr}}
+
+/* ---- blueprint gear: deliberately NOT part of the site design ---- */
+.bp-gear{position:fixed;top:33vh;right:0;z-index:400;width:44px;height:44px;
+ border:0;border-radius:var(--r-2) 0 0 var(--r-2);cursor:pointer;
+ background:#3B2A55;color:#fff;box-shadow:-2px 2px 10px rgba(0,0,0,0.22);
+ display:flex;align-items:center;justify-content:center;padding:0}
+.bp-gear svg{width:22px;height:22px;fill:#fff;transition:transform .3s}
+.bp-gear:hover svg{transform:rotate(60deg)}
+.bp-panel{position:fixed;top:calc(33vh - 8px);right:52px;z-index:400;width:min(380px,calc(100vw - 72px));
+ background:#241A36;color:#E6DEF3;border-radius:var(--r-3);box-shadow:0 10px 40px rgba(0,0,0,0.35);
+ padding:var(--s-5);font-family:var(--sans);font-size:var(--fs-1);line-height:1.5;
+ opacity:0;visibility:hidden;transform:translateX(8px);transition:opacity .16s,transform .16s,visibility 0s .16s}
+.bp-panel.on{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.bp-panel h5{margin:0 0 var(--s-2);font-family:var(--sans);font-size:var(--fs-0);letter-spacing:.12em;
+ text-transform:uppercase;color:#B9A6DC;font-weight:700}
+.bp-panel .bp-name{font-family:var(--serif);font-size:var(--fs-3);color:#fff;margin:0 0 var(--s-4);line-height:1.25}
+.bp-panel dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:var(--s-2) var(--s-4)}
+.bp-panel dt{font-size:var(--fs-0);text-transform:uppercase;letter-spacing:.06em;color:#9B8BBE;white-space:nowrap}
+.bp-panel dd{margin:0;color:#E6DEF3;font-size:var(--fs-0);line-height:1.5;word-break:break-word}
+.bp-panel .bp-note{margin-top:var(--s-4);padding-top:var(--s-4);border-top:1px solid rgba(255,255,255,0.14);
+ color:#C7BADF;font-size:var(--fs-0)}
+.bp-panel .bp-back{display:inline-block;margin-top:var(--s-4);background:#7C5CC4;color:#fff;font-weight:700;
+ padding:var(--s-3) var(--s-4);border-radius:var(--r-2);text-decoration:none;font-size:var(--fs-1)}
+.bp-panel .bp-back:hover{background:#8E70D2}
+@media(max-width:640px){.bp-panel{right:8px;top:auto;bottom:64px;width:calc(100vw - 16px)}}
+
+.h1-sep{color:var(--blue-4);font-weight:400;padding-inline:2px}
+</style>
+
+<div class="util"><div class="wrap">
+ <div>Over 40 Years of Personal Injury Trial Experience</div>
+ <div><a href="#">(503) 472-3770</a> &nbsp;&middot;&nbsp; No charge for the first consultation</div>
+</div></div>
+
+<header class="hdr"><div class="wrap">
+ <a class="logo" href="#">Law Office of Gary G. Norris<span>McMinnville, Oregon</span></a>
+<nav class="nav"><ul class="nav-list">
+  <li class="nav-item has-sub"><a class="nav-link" href="#">Areas of Practice</a><button class="nav-disc"></button>
+   <div class="sub sub-mega">
+    <div class="sub-cols">
+     <div>
+      <p class="sub-h">Personal injury</p>
+      <p class="sub-lede">The primary practice. Twenty-one settlements, $11,821,500 recovered.</p>
+      <ul>
+       <li><a href="#">Car Accidents</a></li><li><a href="#">Uninsured &amp; Underinsured Motorist</a></li>
+       <li><a href="#">Motorcycle Accidents</a></li><li><a href="#">Pedestrian &amp; Crosswalk</a></li>
+       <li><a href="#">Wrongful Death</a></li><li><a href="#">Fall Injuries</a></li>
+       <li><a class="sub-all" href="#">All personal injury claims &rarr;</a></li></ul>
+     </div>
+     <div>
+      <p class="sub-h">Civil trial practice</p>
+      <p class="sub-lede">Disputes already headed for a courtroom and neutral work.</p>
+      <ul>
+       <li><a href="#">Business Disputes</a></li><li><a href="#">Contractor Defence &amp; CCB</a></li>
+       <li><a href="#">Mediation</a></li><li><a href="#">Arbitration</a></li>
+       <li><a class="sub-all" href="#">All civil trial practice &rarr;</a></li></ul>
+     </div>
+     <div class="sub-aside">
+      <p class="sub-h">Not sure which applies?</p>
+      <p class="sub-help">Describe what happened and we will tell you whether you have a claim. There is no charge for that conversation.</p>
+      <a class="btn btn-1" href="#" style="margin-top:var(--s-4)">Call (503) 472-3770</a>
+     </div>
+    </div>
+   </div></li>
+  <li class="nav-item"><a class="nav-link" href="#">Results</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Notes on the Law</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+  <li class="nav-item"><a class="btn btn-1" href="#">Free Consultation</a></li>
+ </ul></nav>
+</div></header>
+<div class="wrap"><div class="crumb"><a href="home.html">Home</a> &rsaquo; Civil Trial Practice</div></div>
+<section class="hero"><div class="wrap"><div class="hero-grid">
+ <div>
+  <h1>Civil Trial Practice in McMinnville, Oregon <span class="h1-sep">|</span> Forty-Four Years in Court</h1>
+  <p class="lead">Alongside the injury work this is a civil trial practice. Business disputes already headed for a
+   courtroom, defence of contractors and neutral work as both a mediator and an arbitrator.</p>
+  <div class="btn-row"><a class="btn btn-1" href="#">Discuss a dispute</a>
+   <a class="btn btn-2" href="#">Call (503) 472-3770</a></div>
+ </div>
+ <div class="hero-media img" data-label="Photograph, the office, not a gavel"></div>
+</div></div></section>
+<div class="trust"><div class="wrap">
+ <div class="trust-i"><b>44 years</b><span>Trying Oregon injury cases. Admitted 1982, McMinnville since 1996.</span></div>
+ <div class="trust-i"><b>4.8 <span class="stars" style="font-size:var(--fs-2)">&#9733;&#9733;&#9733;&#9733;&#9733;</span></b>
+  <span>From 55 Google reviews, more than any firm in McMinnville</span></div>
+ <div class="trust-i"><b>No fee unless we recover</b><span>And no charge for the first consultation</span></div>
+ <div class="trust-i"><div class="badge"><i>SL</i><em>Super&nbsp;Lawyers<br>2020&ndash;2026</em></div>
+  <span>Seven consecutive years</span></div>
+</div></div>
+
+<section class="sec"><div class="wrap">
+ <div class="sec-head"><h2>Business Disputes, Contractor Defence and Neutral Work</h2></div>
+ <div class="grid g2">
+  <a class="card" href="#"><h3>Business Disputes</h3>
+   <p>Litigation, not contract drafting. Disputes that are already headed for a courtroom, including business
+    breakups in closely held companies.</p><span class="go">Business disputes &rarr;</span></a>
+  <a class="card" href="#"><h3>Contractor Defence</h3>
+   <p>Wage claim defence, representation before the Oregon Construction Contractors Board and defending civil
+    suits filed against contractors.</p><span class="go">Contractor defence &rarr;</span></a>
+  <a class="card" href="#"><h3>Mediation</h3>
+   <p>Confidential pre-mediation submissions and a neutral who has worked with dozens of mediators from the
+    advocate&rsquo;s chair. Recognised by Best Lawyers.</p><span class="go">Mediation &rarr;</span></a>
+  <a class="card" href="#"><h3>Arbitration</h3>
+   <p>Mr. Norris serves as an arbitrator for court-annexed arbitration in personal injury and business disputes and for contractual arbitration of civil disputes.</p><span class="go">Arbitration &rarr;</span></a>
+ </div>
+ <div class="note"><k>Real copy &middot; and one open question</k>Every line above is drawn from your existing pages. Whether this whole category survives depends on your answer to question 3, your Super Lawyers profile says 100% personal injury plaintiff and these pages say otherwise. Nothing publishes until you settle it. The Best Lawyers recognition also needs its year named.</div>
+</div></section>
+
+<section class="sec sec-tint"><div class="wrap">
+ <div class="sec-head"><h2>Forty-Four Years in Oregon Courtrooms</h2></div>
+ <div class="note"><k>Write this &middot; about 250 words</k>What a civil trial practice actually means for someone with a dispute: when litigation is worth it and when it is not, what the first meeting covers, how you decide whether to take a matter and what a client should have with them. Your bio carries the credentials, this section needs the judgement behind them.</div>
+ <p class="dummy">Laborum perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa. Quae ab illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam quia voluptas aspernatur. Aut odit fugit consequuntur magni dolores eos ratione sequi nesciunt neque porro quisquam dolorem adipisci numquam. Eius modi tempora incidunt magnam aliquam quaerat lorem ipsum dolor sit amet. Consectetur adipiscing.</p>
+   <p class="dummy">Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure in reprehenderit voluptate velit esse cillum eu. Fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim. Id est laborum perspiciatis unde omnis iste natus error.</p>
+   <p class="dummy">Voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab. Illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo. Ipsam quia voluptas aspernatur aut odit fugit consequuntur magni. Dolores eos ratione sequi nesciunt neque porro quisquam dolorem adipisci numquam eius modi tempora incidunt. Magnam aliquam quaerat lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt. Ut.</p>
+   <p class="dummy">Dolore magna aliqua enim ad minim veniam quis nostrud. Exercitation ullamco laboris nisi aliquip ex ea commodo consequat duis. Aute irure in reprehenderit voluptate velit esse cillum eu. Fugiat nulla pariatur excepteur sint occaecat cupidatat non proident. Sunt culpa qui officia deserunt mollit anim id est laborum perspiciatis unde. Omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque. Ipsa quae ab.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+ <div class="sec-head"><h2>Published Appellate Decisions</h2></div>
+ <div class="grid g2">
+  <div class="card"><h3 style="font-size:var(--fs-2)"><em>Alcazar v. American Standard Insurance Company</em></h3>
+   <p>256 Or.App. 520, 301 P.3d 978 (2013)</p></div>
+  <div class="card"><h3 style="font-size:var(--fs-2)"><em>Rectenwald v. Snider</em></h3>
+   <p>134 Or.App. 250, 894 P.2d 1242 (1995)</p></div>
+  <div class="card"><h3 style="font-size:var(--fs-2)"><em>Hinds v. Paul&rsquo;s Autowerkstatt Inc.</em></h3>
+   <p>107 Or.App. 63, 810 P.2d 874 (1991)</p></div>
+  <div class="card"><h3 style="font-size:var(--fs-2)"><em>Olsten Temporary Services Inc. v. Lipton</em></h3>
+   <p>104 Or.App. 565, 802 P.2d 93 (1990)</p></div>
+ </div>
+ <div class="note"><k>Reused verbatim</k>Four cases briefed and argued, currently listed once on your qualifications page. This is the strongest expertise signal on the site and it appears in exactly one place today.</div>
+</div></section>
+
+<section class="sec sec-tint"><div class="wrap">
+ <div class="sec-head"><h2>Civil Trial Questions</h2></div>
+ <div class="faq">
+  <details open><summary>Do you draft or review contracts?</summary>
+   <div class="a"><p>No. This is a litigation practice. We act when a dispute is already headed for a courtroom or
+    an arbitration, not on transactions.</p></div></details>
+  <details><summary>What does mediation actually involve?</summary>
+   <div class="a"><p>Usually half a day. Each side submits a confidential pre-mediation statement setting out its
+    case and, candidly, its weaknesses and the mediator works between the parties from there.</p></div></details>
+  <details><summary>Can you act as our arbitrator?</summary>
+   <div class="a"><p>Yes. Mr. Norris serves as an arbitrator in court-annexed arbitration and in contractual
+    arbitration of civil disputes.</p></div></details>
+  <details><summary>What does a civil case cost?</summary>
+   <div class="a"><div class="note"><k>Write this &middot; 80&ndash;100 words</k>Hourly, flat, or a mix and how a retainer works. This side of the practice is not contingency and the site should not let a reader assume it is.</div><p class="dummy">Ipsam quia voluptas aspernatur aut odit fugit consequuntur magni dolores eos ratione sequi nesciunt neque porro. Quisquam dolorem adipisci numquam eius modi tempora incidunt magnam aliquam quaerat lorem ipsum dolor. Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip ex. Ea commodo consequat duis aute irure in reprehenderit voluptate velit esse cillum. Eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui. Officia deserunt mollit anim id est laborum.</p></div></details>
+ </div>
+</div></section>
+
+<section class="results sec-major"><div class="wrap" style="text-align:center">
+ <h2 style="color:#fff">Have a Dispute Heading for Court?</h2>
+ <p style="margin:var(--s-5) auto 0;color:#AEC2D4;max-width:52ch">Forty-four years of Oregon trial practice, in an
+  office where you deal with the lawyer directly.</p>
+ <div class="btn-row" style="justify-content:center"><a class="btn btn-1" href="#">Request a consultation</a>
+  <a class="btn btn-2" href="#">Call (503) 472-3770</a></div>
+</div></section>
+
+<footer class="ftr"><div class="wrap">
+ <div class="g4">
+  <div><h4>Law Office of Gary G. Norris</h4>
+   <p style="color:#B9C9D8">723 NE Baker St, Suite 100<br>McMinnville, Oregon 97128</p>
+   <p style="color:#B9C9D8;margin-top:var(--s-4)">Phone (503) 472-3770<br>Fax (503) 472-2349<br>counsel@ggnlaw.com</p></div>
+  <div><h4>Personal injury</h4><a href="#">Car accidents</a><a href="#">Uninsured motorist</a>
+   <a href="#">Wrongful death</a><a href="#">Fall injuries</a><a href="#">Dog bites</a><a href="#">All practice areas</a></div>
+  <div><h4>The firm</h4><a href="#">About Gary Norris</a><a href="#">Results</a>
+   <a href="#">Notes on the Law</a><a href="#">Contact</a></div>
+  <div><h4>Areas we serve</h4><a href="#">McMinnville</a><a href="#">Salem</a><a href="#">Newberg</a>
+   <a href="#">Hillsboro</a><a href="#">Beaverton</a><a href="#">Sheridan</a></div>
+ </div>
+ <div class="legal">
+  <p>&copy; 2026 Law Office of Gary G. Norris. All rights reserved. &nbsp;&middot;&nbsp;
+   <a href="#">Legal disclaimer</a> &nbsp;&middot;&nbsp; <a href="#">Privacy policy</a> &nbsp;&middot;&nbsp;
+   <a href="#">Accessibility</a></p>
+  <p style="margin-top:var(--s-3)">The information on this website is for general information purposes only and is
+   not legal advice. Contacting this firm does not create an attorney-client relationship. Past results do not
+   guarantee a similar outcome.</p>
+ </div>
+</div></footer>
+
+<button class="bp-gear" aria-label="Blueprint details"><svg viewBox="0 0 24 24"><path d="M19.4 13a7.8 7.8 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.6 7.6 0 0 0-1.7-1L14.5 2a.5.5 0 0 0-.5-.4h-4a.5.5 0 0 0-.5.4l-.4 2.6a7.6 7.6 0 0 0-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.5a.5.5 0 0 0 .1.6L4.6 11a7.8 7.8 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.6l2 3.5a.5.5 0 0 0 .6.2l2.5-1a7.6 7.6 0 0 0 1.7 1l.4 2.6a.5.5 0 0 0 .5.4h4a.5.5 0 0 0 .5-.4l.4-2.6a7.6 7.6 0 0 0 1.7-1l2.5 1a.5.5 0 0 0 .6-.2l2-3.5a.5.5 0 0 0-.1-.6zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"/></svg></button>
+<aside class="bp-panel"><h5>Category page</h5><p class="bp-name">Civil Trial Practice</p><dl><dt>URL</dt><dd>/civil-trial-practice/</dd><dt>Targets</dt><dd>civil trial attorney oregon</dd><dt>H1</dt><dd>Civil Trial Practice in McMinnville, Oregon | Forty-Four Years in Court</dd><dt>Title</dt><dd>Civil Trial Attorney McMinnville OR | Disputes, Mediation, CCB</dd><dt>Meta</dt><dd>Business disputes, contractor defence, mediation and arbitration, from a McMinnville lawyer who has tried cases in Oregon courts since 1982. (503) 472-3770.</dd><dt>Schema</dt><dd>Organization + BreadcrumbList + FAQPage</dd></dl><p class="bp-note">One per Google Business Profile category. Links down to its own services, up to the homepage, never sideways.</p><a class="bp-back" href="../index.html#blueprints">&larr; Back to the plan</a></aside>
+<script>
+(function(){var g=document.querySelector('.bp-gear'),p=document.querySelector('.bp-panel');
+ g.addEventListener('click',function(e){e.stopPropagation();p.classList.toggle('on');});
+ document.addEventListener('click',function(e){if(!p.contains(e.target))p.classList.remove('on');});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')p.classList.remove('on');});})();
+</script>
