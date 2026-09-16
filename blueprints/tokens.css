@@ -222,6 +222,8 @@ a.card:hover{border-color:var(--blue-4)}
 .faq .a{padding-bottom:var(--s-4);color:var(--ink-2)}
 .faq .a p+p{margin-top:var(--s-3)}
 .faq .a .ph{min-height:0}
+.faq details.seed summary{color:var(--blue-7)}
+.faq details.seed summary::before{content:"Seed";display:inline-block;font:700 10px/1.6 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--amber-6);background:var(--amber-1);border-radius:var(--r-1);padding:0 6px;margin-right:8px;vertical-align:middle}
 
 /* crumbs, nap, article, blog, forms */
 .crumb{font-size:var(--fs-1);color:var(--ink-3);padding-block:0 var(--s-4)}
@@ -247,6 +249,23 @@ a.card:hover{border-color:var(--blue-4)}
 .plain th,.plain td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 .plain th{font-size:var(--fs-0);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3)}
 
+/* directions */
+.dirs{margin-top:var(--s-3);padding-left:1.3em;max-width:var(--measure)}
+.dirs li+li{margin-top:var(--s-2)}
+iframe.map{width:100%;min-height:360px;height:100%;border:1px solid var(--line);border-radius:var(--r-3);display:block}
+/* mobile call bar */
+.callbar{display:none}
+@media(max-width:700px){
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2);position:fixed;left:0;right:0;bottom:0;z-index:45;padding:var(--s-2) var(--s-3) calc(var(--s-2) + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line-2);box-shadow:0 -4px 16px rgba(12,29,51,.12)}
+  .callbar .btn{text-align:center;padding:12px 8px}
+  body{padding-bottom:72px}
+  .bp-panel{max-height:calc(100vh - 150px)}
+  /* compact sibling list on phones */
+  .sib{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2) var(--s-4)}
+  .sib .card{padding:var(--s-2) 0;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+  .sib .card h3{font-size:var(--fs-1);font-family:var(--sans);font-weight:700}
+  .sib .card p,.sib .card .more{display:none}
+}
 /* modal */
 .modal{position:fixed;inset:0;z-index:80;background:rgba(14,35,56,.55);display:flex;align-items:center;justify-content:center;padding:var(--s-4)}
 .modal[hidden]{display:none}
