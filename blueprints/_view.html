@@ -1,9 +1,9 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Viewer</title>
-<style>body{margin:0;background:#333;font:13px sans-serif;color:#ddd}#bar{padding:6px 10px;background:#111}#bar a{color:#9cf;margin-right:12px}
-iframe{display:block;margin:10px auto;background:#fff;border:0;box-shadow:0 0 0 1px #000}</style></head><body>
-<div id="bar"><span id="lbl"></span></div><iframe id="f"></iframe>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Viewport viewer</title>
+<style>body{margin:0;background:#E9EEF3;font:14px -apple-system,Segoe UI,Roboto,sans-serif;color:#1B1F24}.bar{padding:8px 12px;background:#0E2338;color:#fff;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.bar input,.bar select{font:inherit;padding:3px 6px}.bar a{color:#F3D48A}.stage{padding:16px;display:flex;justify-content:center}iframe{background:#fff;border:1px solid #C3CAD2;box-shadow:0 8px 30px rgba(0,0,0,.15)}</style></head>
+<body><div class="bar"><label>Width <input id="w" type="number" value="390" style="width:70px"></label><label>Height <input id="h" type="number" value="844" style="width:70px"></label><label>Page <input id="p" value="blueprints/home.html" style="width:320px"></label><label><input id="pins" type="checkbox" checked> pins</label><button id="go">Load</button><a id="open" href="#" target="_blank">open page</a></div>
+<div class="stage"><iframe id="f" title="Page under test"></iframe></div>
 <script>
-var q=new URLSearchParams(location.search),w=+q.get('w')||390,h=+q.get('h')||844,p=q.get('p')||'home.html';
-var f=document.getElementById('f');f.width=w;f.height=h;f.src=p+(q.get('pins')==='0'?'?pins=0':'');
-document.getElementById('lbl').textContent=p+' at '+w+'x'+h;
+var q=new URLSearchParams(location.search);['w','h','p'].forEach(function(k){if(q.get(k))document.getElementById(k).value=q.get(k)});if(q.get('pins')==='0')document.getElementById('pins').checked=false;
+function load(){var w=+document.getElementById('w').value,h=+document.getElementById('h').value,p=document.getElementById('p').value,f=document.getElementById('f');f.width=w;f.height=h;var u='../'+p.replace(/^\//,'')+(document.getElementById('pins').checked?'':'?pins=0');f.src=u;document.getElementById('open').href=u;history.replaceState(null,'','?w='+w+'&h='+h+'&p='+encodeURIComponent(p)+(document.getElementById('pins').checked?'':'&pins=0'));}
+document.getElementById('go').onclick=load;load();
 </script></body></html>
