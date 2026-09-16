@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Viewer</title>
+<style>body{margin:0;background:#333;font:13px sans-serif;color:#ddd}#bar{padding:6px 10px;background:#111}#bar a{color:#9cf;margin-right:12px}
+iframe{display:block;margin:10px auto;background:#fff;border:0;box-shadow:0 0 0 1px #000}</style></head><body>
+<div id="bar"><span id="lbl"></span></div><iframe id="f"></iframe>
+<script>
+var q=new URLSearchParams(location.search),w=+q.get('w')||390,h=+q.get('h')||844,p=q.get('p')||'home.html';
+var f=document.getElementById('f');f.width=w;f.height=h;f.src=p+(q.get('pins')==='0'?'?pins=0':'');
+document.getElementById('lbl').textContent=p+' at '+w+'x'+h;
+</script></body></html>
