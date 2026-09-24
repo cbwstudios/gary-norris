@@ -1,0 +1,47 @@
+/* Blueprint annotation chrome only: note pins, the gear panel, image and copy placeholders, and the
+   accessibility helpers. Deliberately NOT part of the site design and never shipped with the site.
+   Everything that looks like the site comes from assets/core/ggn.css, generated from ggn.core. */
+.skip{position:absolute;left:-999px;top:8px;z-index:500;background:#fff;color:#0F1B2D;padding:8px 12px;border-radius:4px;font-weight:700}
+.skip:focus{left:8px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* copy we do not have yet */
+.ph{background:repeating-linear-gradient(45deg,#EEE9E0,#EEE9E0 10px,#F6F2EA 10px,#F6F2EA 20px);border:1px dashed #B9AE9C;border-radius:6px;padding:12px 14px;color:#5A5348;font-size:14px;line-height:1.5}
+.ground-band .ph{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.35);color:#E7ECF3}
+
+/* photographs we do not have yet: the box is the exact shape the photograph will fill */
+.img{position:relative;overflow:hidden;border-radius:8px;background:linear-gradient(140deg,#1C3350,#274871 60%,#3B5F8F);display:flex;align-items:flex-end;min-height:220px}
+.img::after{content:attr(data-label);display:block;width:100%;padding:24px 16px 14px;color:#fff;font-size:13px;line-height:1.45;background:linear-gradient(to top,rgba(15,27,45,.85),transparent)}
+
+/* numbered note pins with a tooltip for Gary, on by default, hidden by the gear toggle */
+.pin{position:relative;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;margin:0 4px;vertical-align:middle;border:0;border-radius:50%;background:#B8912A;color:#fff;font:700 12px/1 system-ui,sans-serif;cursor:pointer;padding:0}
+.pin:hover{background:#8A6A16}
+.pin-tip{display:none;position:absolute;left:50%;top:calc(100% + 10px);transform:translateX(-50%);width:min(340px,80vw);background:#fff;color:#101828;text-align:left;font:400 14px/1.5 system-ui,sans-serif;padding:12px 14px;border-radius:8px;box-shadow:0 8px 30px rgba(15,27,45,.25);z-index:300}
+.pin-tip b{display:block;font-size:12px;color:#8A6A16;margin-bottom:2px}
+.pin.open .pin-tip{display:block}
+.pin.pin-edge .pin-tip{left:auto;right:-8px;transform:none}
+.pin.pin-edge-l .pin-tip{left:-8px;right:auto;transform:none}
+body.pins-off .pin{display:none}
+
+/* the gear and the notes panel */
+.bp-gear{position:fixed;top:33vh;right:0;z-index:400;width:44px;height:44px;border:0;border-radius:8px 0 0 8px;cursor:pointer;background:#3B2A55;padding:0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.bp-gear svg{width:22px;height:22px;fill:#fff;transition:transform .3s}
+.bp-gear:hover svg{transform:rotate(60deg)}
+.bp-panel{position:fixed;top:calc(33vh - 8px);right:52px;z-index:400;width:min(420px,calc(100vw - 72px));max-height:calc(100vh - 40vh);overflow:auto;background:#241A36;color:#E6DEF3;padding:18px 20px;border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.35);font:400 14px/1.5 system-ui,sans-serif}
+.bp-panel[hidden]{display:none}
+.bp-panel h5{margin:0 0 6px;font-size:12px;color:#B9A6DC;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.bp-panel .bp-name{font-size:20px;color:#fff;margin:0 0 14px;line-height:1.25;font-weight:600}
+.bp-panel dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.bp-panel dt{font-size:12px;color:#9B8BBE;white-space:nowrap}
+.bp-panel dd{margin:0;color:#E6DEF3;font-size:13px;line-height:1.5;word-break:break-word}
+.bp-panel label{display:flex;gap:8px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);color:#C7BADF;font-size:13px}
+.bp-panel ol{margin:10px 0 0;padding-left:1.4em;font-size:13px}
+.bp-panel li+li{margin-top:6px}
+.bp-panel ol a{color:#E6DEF3;text-decoration:none}
+.bp-panel ol a b{color:#F3D48A}
+.bp-panel ol a:hover{text-decoration:underline}
+.bp-panel .bp-links{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);display:flex;gap:10px;flex-wrap:wrap}
+.bp-panel .bp-back{display:inline-block;background:#7C5CC4;color:#fff;font-weight:700;padding:6px 14px;border-radius:6px;text-decoration:none;font-size:13px}
+.bp-panel .bp-back:hover{background:#8E70D2}
+.bp-panel .bp-back.alt{background:transparent;border:1px solid #7C5CC4}
+@media(max-width:700px){.bp-panel{right:8px;top:auto;bottom:84px;width:calc(100vw - 16px);max-height:60vh}.bp-gear{top:auto;bottom:100px}}

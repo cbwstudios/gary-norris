@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Website Optimization Plan, The Law Office of Gary G. Norris</title>
+<link rel="stylesheet" href="assets/core/fonts.css">
 <style>
 :root{
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s7:32px; --s8:44px; --s9:64px;
@@ -13,7 +14,9 @@
   --sh2:0 4px 8px -2px rgba(16,24,40,0.08),0 2px 4px -2px rgba(16,24,40,0.06);
   --sh3:0 12px 16px -4px rgba(16,24,40,0.08),0 4px 6px -2px rgba(16,24,40,0.03);
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --serif:"Playfair Display","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --display:"Playfair Display",Georgia,serif;
+  --body:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   --f0:13px; --f1:15px; --f2:17px; --f3:20px; --f4:25px; --f5:31px; --f6:39px; --f7:49px;
   --navy9:#0F1B2D; --navy8:#152538; --navy7:#1C3350; --navy6:#274871;
@@ -1497,105 +1500,132 @@ ul.heads li b{color:var(--navy9)}
         <h2>What the site is built from</h2>
         <p>A serious, plain palette. Nothing about a personal injury firm's website should feel like a sales page.</p>
       </div>
-      <div class="srcnote">This palette is provisional, drawn from your current site's dark navy and gold accents. Send us your logo as a vector file and we will pull the exact values from it.</div>
+      <div class="srcnote">The palette is drawn from your current site's dark navy and gold accents; the type is chosen to sit beside your wordmark. Both are provisional until we have the logo as a vector file, which lets us pull exact values instead of measured ones.</div>
     </div>
 
     <div class="section">
-      <div class="shead"><h2>Color</h2></div>
-      <h3 style="margin-bottom:var(--s4)">Primary, used for headings, the header and calls to action</h3>
-      <div class="grid g4">
-        <div class="sw"><div class="chip" style="background:#0F1B2D"></div><div class="meta"><b>Navy 900</b><code>#0F1B2D</code></div></div>
-        <div class="sw"><div class="chip" style="background:#152538"></div><div class="meta"><b>Navy 800</b><code>#152538</code></div></div>
-        <div class="sw"><div class="chip" style="background:#1C3350"></div><div class="meta"><b>Navy 700</b><code>#1C3350</code></div></div>
-        <div class="sw"><div class="chip" style="background:#274871"></div><div class="meta"><b>Navy 600</b><code>#274871</code></div></div>
-      </div>
-      <h3 style="margin:var(--s7) 0 var(--s4)">Accent, used sparingly, for emphasis and credentials</h3>
-      <div class="grid g4">
-        <div class="sw"><div class="chip" style="background:#8A6A16"></div><div class="meta"><b>Gold 600</b><code>#8A6A16</code></div></div>
-        <div class="sw"><div class="chip" style="background:#B8912A"></div><div class="meta"><b>Gold 500</b><code>#B8912A</code></div></div>
-        <div class="sw"><div class="chip" style="background:#FBF4E2"></div><div class="meta"><b>Gold 100</b><code>#FBF4E2</code></div></div>
-        <div class="sw"><div class="chip" style="background:#1D5FA8"></div><div class="meta"><b>Link blue</b><code>#1D5FA8</code></div></div>
-      </div>
-      <h3 style="margin:var(--s7) 0 var(--s4)">Text and surfaces</h3>
-      <div class="grid g4">
-        <div class="sw"><div class="chip" style="background:#101828"></div><div class="meta"><b>Ink</b><code>#101828</code></div></div>
-        <div class="sw"><div class="chip" style="background:#344054"></div><div class="meta"><b>Body text</b><code>#344054</code></div></div>
-        <div class="sw"><div class="chip" style="background:#667085"></div><div class="meta"><b>Muted</b><code>#667085</code></div></div>
-        <div class="sw"><div class="chip" style="background:#F2F4F7;border-bottom:1px solid #E4E7EC"></div><div class="meta"><b>Section tint</b><code>#F2F4F7</code></div></div>
-      </div>
+      <div class="shead"><h2>The framework, live</h2><p>Everything in this frame is drawn by the site's design framework, Core Framework, from one project file. Nothing in it is styled by hand. Change a value in the project and every page follows.</p></div>
+      <iframe id="ggn-specimen" src="assets/core/specimen.html" title="Style Guide specimen rendered by the site's design framework" style="width:100%;height:1200px;border:1px solid var(--line);border-radius:var(--r3);background:#F6F2EA" loading="lazy"></iframe>
+      <script>addEventListener("message",function(e){if(e.data&&e.data.ggnSpecimenHeight){document.getElementById("ggn-specimen").style.height=(e.data.ggnSpecimenHeight+2)+"px"}});</script>
+      <div class="srcnote">The project file (<a href="assets/core/ggn.core">ggn.core</a>) imports straight into the framework's WordPress plugin and into its web app, and the stylesheet the frame loads (<a href="assets/core/ggn.css">ggn.css</a>) is generated from it. The names inside the frame, primary, secondary, text-title, space-m and so on, are the names the site is built with.</div>
+    </div>
+
+    <div class="section">
+      <div class="shead"><h2>Color</h2><p>Navy carries the words, cream carries the page, gold appears once. The swatches and their names are in the frame above.</p></div>
+      <p class="prose">Primary is the navy (#0F1B2D) used for every heading, the navy band, the footer and the main button, with three darker-to-lighter tints for the header, hover states and rules and one pale tint for the rare tinted panel. Secondary is the gold (#B8912A) with one deeper shade for hover and one pale tint for a highlight. Tertiary is the link blue (#1D5FA8) and is used for links only. Text has three roles: title, body and muted. Grounds have three: cream, white and the navy band.</p>
+      <h3 style="margin:var(--s7) 0 var(--s4)">How the grounds alternate</h3>
+      <p class="prose">A page has three grounds: cream, white and navy. Sections change ground instead of announcing themselves with labels or lines. Cream is the default page ground, white lifts a section, and navy appears once per page, for the results band, and again in the footer. Body text on navy is white; figures on navy are gold.</p>
       <div class="callout" style="margin-top:var(--s6)">
-        <h3>One rule about blue</h3>
-        <p>Blue means clickable, always and only. A heading is never blue. If it's blue, it's a link.</p>
+        <h3>Two rules about color</h3>
+        <p>Blue means clickable, always and only. A heading is never blue. If it's blue, it's a link. Gold appears at most once in any screenful: the button, or the figures, or a credential, never all three.</p>
       </div>
     </div>
 
     <div class="section">
-      <div class="shead"><h2>Type</h2></div>
+      <div class="shead"><h2>Wordmark</h2><p>The logo is a fixed image and is never redrawn or retyped. Everything else on this page is chosen to sit beside it.</p></div>
+      <div class="grid g2">
+        <div class="card" style="display:flex;align-items:center;justify-content:center;min-height:180px">
+          <img src="assets/ggnlaw-wordmark.png" alt="The Law Office of Gary G. Norris wordmark, black on white" title="Wordmark, dark on light" style="max-width:100%;height:auto">
+        </div>
+        <div class="card" style="display:flex;align-items:center;justify-content:center;min-height:180px;background:var(--navy9)">
+          <img src="assets/ggnlaw-wordmark-white.webp" alt="The Law Office of Gary G. Norris wordmark, white on navy" title="Wordmark, light on dark" style="max-width:100%;height:auto">
+        </div>
+      </div>
+      <p class="prose" style="margin-top:var(--s4)">The letters are classical Roman capitals with small caps, the inscriptional style carved on Trajan's Column. Headings do not imitate it. The heading face below is chosen to sit beside it: a serif with the same contrast between thick and thin strokes and a true lowercase, so headings read as the wordmark's family without ever being set in its letters. Where a line has to echo the wordmark itself, the office name in the footer for example, Cinzel is the one face that may do it, and it is loaded only on the pages that use it.</p>
+    </div>
+
+    <div class="section">
+      <div class="shead"><h2>Type</h2><p>Two families, one job each. Nothing else is loaded. Specimens are in the frame above; the sizes come from a fluid scale that grows with the screen, so every size has a phone value and a desktop value.</p></div>
       <div class="grid g2">
         <div class="card">
-          <h3>Headings and body</h3>
-          <p style="font-family:var(--sans);font-size:var(--f4);color:var(--navy9);font-weight:650">Car Accident Lawyer in McMinnville</p>
-          <p>A clean sans-serif throughout. Readable at arm's length on a phone which is where most of these visits arrive.</p>
+          <h3>Headings: Playfair Display</h3>
+          <p>A high-contrast serif with a true lowercase, so it can carry a full sentence at hero size and a two-line page heading beneath it. Regular weight for the display line, semibold for H1, H2 and figures. It shares the wordmark's thick-and-thin stroke contrast without borrowing its letters.</p>
+        </div>
+        <div class="card">
+          <h3>Body: Poppins</h3>
+          <p>A round, open sans for paragraphs, lists, H3 and below, buttons, forms and navigation. It carries over from the current site's theme, so the site keeps one thread of its old voice. Two weights only: regular for text, semibold for buttons, navigation and emphasis. Poppins runs wide, so body sits at 17px with a 1.6 line height and a measure of 60 to 70 characters.</p>
         </div>
         <div class="card">
           <h3>Numbers and figures</h3>
-          <p style="font-family:var(--serif);font-size:var(--f6);color:var(--navy9);font-weight:600">$2,500,000</p>
-          <p>Settlement figures and statistics are set in a serif face. It makes the proof feel like a record rather than an advertisement.</p>
+          <p>Settlement figures and step numerals are set in the heading face. It makes the proof feel like a record rather than an advertisement, and it keeps the site to two families.</p>
+        </div>
+        <div class="card">
+          <h3>What changed from the current site</h3>
+          <p>The current site loads two competing font systems. The theme sets headings in Amiri and body in Poppins; the page builder then overrides the content of every page with Roboto and Roboto Slab, so the text people actually read is Roboto and Poppins only reaches the header and footer. The rebuild keeps Poppins, drops Roboto and Roboto Slab, and replaces Amiri, which goes thin at hero size, with Playfair Display.</p>
         </div>
       </div>
       <div class="tablewrap" style="margin-top:var(--s5)">
         <table class="data">
-          <thead><tr><th>Use</th><th class="num">Size</th><th>Notes</th></tr></thead>
+          <thead><tr><th>Use</th><th>Face</th><th>Step</th><th class="num">Phone</th><th class="num">Desktop</th><th>Notes</th></tr></thead>
           <tbody>
-            <tr><td>Page heading (H1)</td><td class="num">39px</td><td>One per page, contains the service and the city</td></tr>
-            <tr><td>Section heading (H2)</td><td class="num">31px</td><td>The headings alone must tell the page's story</td></tr>
-            <tr><td>Sub-heading (H3)</td><td class="num">20px</td><td></td></tr>
-            <tr><td>Body</td><td class="num">17px</td><td>Line length capped at 860px, roughly 70 characters</td></tr>
-            <tr><td>Small print</td><td class="num">13px</td><td>Disclaimers, notes, captions</td></tr>
+            <tr><td>Display line</td><td>Playfair Display 400</td><td>text-4xl</td><td class="num">40px</td><td class="num">52px</td><td>A short sentence above the H1 on the home page and each service page. It is a styled paragraph, not a heading, so the page still has exactly one H1</td></tr>
+            <tr><td>Page heading (H1)</td><td>Playfair Display 600</td><td>text-2xl</td><td class="num">28px</td><td class="num">33px</td><td>One per page, contains the service, the city and the benefit. Runs to two lines under the display line</td></tr>
+            <tr><td>Section heading (H2)</td><td>Playfair Display 600</td><td>text-xl</td><td class="num">23px</td><td class="num">27px</td><td>The headings alone must tell the page's story</td></tr>
+            <tr><td>Sub-heading (H3)</td><td>Poppins 600</td><td>text-l</td><td class="num">19px</td><td class="num">21px</td><td>Card titles, step titles, question titles</td></tr>
+            <tr><td>Body</td><td>Poppins 400</td><td>text-m</td><td class="num">16px</td><td class="num">17px</td><td>Line height 1.6. Measure of 60 to 70 characters, about 670px</td></tr>
+            <tr><td>Buttons, labels, navigation</td><td>Poppins 600</td><td>0.88 of text-m</td><td class="num">14px</td><td class="num">15px</td><td>Sentence case. No tracked-out capitals anywhere on the site</td></tr>
+            <tr><td>Settlement figures, step numerals</td><td>Playfair Display 600</td><td>text-3xl</td><td class="num">33px</td><td class="num">41px</td><td>Gold on navy, navy on cream</td></tr>
+            <tr><td>Small print</td><td>Poppins 400</td><td>text-s</td><td class="num">13px</td><td class="num">14px</td><td>Disclaimers, notes, captions</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="srcnote">Both faces are open licensed (SIL Open Font License) and self-hosted on the site, not loaded from Google at run time. Cinzel, also open licensed, is the reserved third face for wordmark echoes only and is not loaded on pages that have none.</div>
+    </div>
+
+    <div class="section">
+      <div class="shead"><h2>Layout rules</h2><p>How every page is put together. These are settled before any page is drawn, and every page is checked against them.</p></div>
+      <div class="grid g2">
+        <div class="card">
+          <h3>One idea per section</h3>
+          <p>A section has one heading, one point and at most one image. If a section needs two ideas, it is two sections. Sections are separated by space and by a change of ground, never by lines, labels or decorative rules.</p>
+        </div>
+        <div class="card">
+          <h3>Content left, image right</h3>
+          <p>Every image is a standalone photograph with its own caption text for search and screen readers. Text never sits on top of a photograph. Columns are balanced: the image column is as tall as the text beside it, no taller.</p>
+        </div>
+        <div class="card">
+          <h3>The page opening</h3>
+          <p>Display line in the serif, then the H1 on two lines, then one paragraph, then one button with the phone number. Portrait of Gary on the right, hard edged, not faded into the text. Under it, the trust strip: three facts, each a bold line and one sentence, no icons.</p>
+        </div>
+        <div class="card">
+          <h3>What is left out</h3>
+          <p>No icons beside facts or services. No small tracked-out labels above headings. No numbers in circles. No arrows on links. No vertical rules between columns. No strips of small photographs. No signatures or handwriting. No text over photographs. A page that needs any of these to look finished is not finished.</p>
+        </div>
+        <div class="card">
+          <h3>Proof sections</h3>
+          <p>Results are figures in the serif on the navy band with a one-line disclaimer beneath them and nothing else. Steps are a gold numeral, a bold line and one sentence. Questions are a plain list. Testimonials are the quotation, the first name and the town, no photograph and no stars.</p>
+        </div>
+        <div class="card">
+          <h3>Phones first</h3>
+          <p>Most visits arrive on a phone. Every section is designed at phone width first, where the two columns stack with the image under the text, and then widened. Nothing appears on desktop that is hidden on the phone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="shead"><h2>Spacing</h2><p>Every gap on the site comes from one eleven-step scale that grows with the screen. Nothing is eyeballed.</p></div>
+      <div class="tablewrap">
+        <table class="data">
+          <thead><tr><th>Step</th><th class="num">Phone</th><th class="num">Desktop</th><th>Used for</th></tr></thead>
+          <tbody>
+            <tr><td>space-4xs</td><td class="num">5px</td><td class="num">5px</td><td>Hairline gaps</td></tr>
+            <tr><td>space-3xs</td><td class="num">7px</td><td class="num">7px</td><td>Gap inside a button</td></tr>
+            <tr><td>space-2xs</td><td class="num">8px</td><td class="num">10px</td><td>Gap between lines in a card</td></tr>
+            <tr><td>space-xs</td><td class="num">10px</td><td class="num">14px</td><td>Button padding, step numeral gap</td></tr>
+            <tr><td>space-s</td><td class="num">13px</td><td class="num">20px</td><td>Stack gap, header padding, container side padding</td></tr>
+            <tr><td>space-m</td><td class="num">16px</td><td class="num">28px</td><td>Card padding, grid gap</td></tr>
+            <tr><td>space-l</td><td class="num">20px</td><td class="num">40px</td><td></td></tr>
+            <tr><td>space-xl</td><td class="num">25px</td><td class="num">56px</td><td>Short section padding, footer padding</td></tr>
+            <tr><td>space-2xl</td><td class="num">31px</td><td class="num">79px</td><td>Section padding</td></tr>
+            <tr><td>space-3xl</td><td class="num">39px</td><td class="num">112px</td><td>Hero padding</td></tr>
+            <tr><td>space-4xl</td><td class="num">49px</td><td class="num">158px</td><td></td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <div class="section">
-      <div class="shead"><h2>Spacing</h2><p>Every gap on the site comes from one nine-step scale. Nothing is eyeballed.</p></div>
-      <div class="scale">
-        <div style="width:4px;height:4px"></div><div style="width:8px;height:8px"></div><div style="width:12px;height:12px"></div>
-        <div style="width:16px;height:16px"></div><div style="width:20px;height:20px"></div><div style="width:24px;height:24px"></div>
-        <div style="width:32px;height:32px"></div><div style="width:44px;height:44px"></div><div style="width:64px;height:64px"></div>
-      </div>
-      <p style="margin-top:var(--s3);font-family:var(--mono);font-size:var(--f0);color:var(--ink3)">4 · 8 · 12 · 16 · 20 · 24 · 32 · 44 · 64</p>
-    </div>
-
-    <div class="section">
-      <div class="shead"><h2>Components</h2></div>
-      <div class="grid g2">
-        <div class="card">
-          <h3>Settlement result</h3>
-          <p style="font-family:var(--serif);font-size:var(--f5);color:var(--navy9);font-weight:600">$2,500,000</p>
-          <p style="color:var(--ink2)">Husband and wife on motorcycle, T-boned at an intersection.</p>
-          <p style="font-size:var(--f0);color:var(--ink3);margin-top:var(--s3)">Every client's case is different. These results do not indicate what we may recover in other cases.</p>
-        </div>
-        <div class="card">
-          <h3>The law, in plain terms</h3>
-          <p style="border-left:3px solid var(--gold5);padding-left:var(--s4);color:var(--ink2)">Oregon law requires your uninsured motorist coverage to equal your liability limits. If the at-fault driver has $25,000 and you carry $100,000, your coverage stacks on top, giving you <strong>$125,000</strong>.</p>
-          <p style="font-size:var(--f0);color:var(--ink3)">Statute and worked-example blocks appear on nearly every service page. This is the section competitors don't have.</p>
-        </div>
-        <div class="card">
-          <h3>Call to action</h3>
-          <p><span style="display:inline-block;background:var(--navy9);color:#fff;padding:var(--s3) var(--s6);border-radius:var(--r2);font-weight:650">Call (503) 472-3770</span> <span style="display:inline-block;border:1.5px solid var(--navy9);color:var(--navy9);padding:var(--s3) var(--s6);border-radius:var(--r2);font-weight:650;margin-left:var(--s2)">Request a consultation</span></p>
-          <p>Phone first, always. Both appear in the hero and again at the foot of every page.</p>
-        </div>
-        <div class="card">
-          <h3>Trust strip</h3>
-          <div style="display:flex;gap:var(--s4);flex-wrap:wrap">
-            <span class="pill p-grey">Oregon bar since 1982</span>
-            <span class="pill p-grey">Free consultation</span>
-            <span class="pill p-grey">No recovery, no fee</span>
-          </div>
-          <p style="margin-top:var(--s3)">Three items, identical on every page, directly under the heading.</p>
-        </div>
-      </div>
+      <div class="shead"><h2>Components</h2><p>The button and its variants, the card, the trust strip, the results band, the steps and the statute block are all in the frame above, drawn by the framework. Page-level components, the page opening, the link grid, the question list, the directions block and the footer, are drawn one page at a time on the Blueprints tab and then built once in the site builder.</p></div>
       <div class="srcnote">"No recovery, no fee" needs its cost qualifier in the final wording, clients typically remain responsible for case costs. Gary's exact phrasing, not ours.</div>
     </div>
 
@@ -1705,7 +1735,7 @@ ul.heads li b{color:var(--navy9)}
       <div class="shead">
         <div class="eyebrow">Layer one</div>
         <h2>Eight templates</h2>
-        <p>Every page is built from one of these. Click through to read the page as it will be structured.</p>
+        <p>Every page is built from one of these. Click through to read the page as it will be structured. The homepage mockup is drawn on the design framework from the Style Guide; the other seven follow one at a time as each is approved.</p>
       </div>
       <div class="grid g2"><div class="card">
   <div class="eyebrow">Homepage / category</div>
