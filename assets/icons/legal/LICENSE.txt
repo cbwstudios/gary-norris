@@ -1,0 +1,17 @@
+GGN legal icon set
+
+Source: six vector icon sets licensed from Freepik through Christian's Magnific (Freepik) Premium account, 25 September 2026,
+and extracted into single-colour SVGs (one file per icon, plus sprite.svg) for the Law Office of Gary G. Norris website.
+
+  law40       Freepik 416246171  Collection of Modern Editable Thin Line Style Icons Set, Justice, Law Firm, Criminal Court (author 1034165)
+  law113      Freepik 416408487  113 Collection of Modern Editable Thin Line Style Icons Set, Justice and Law Firm, Criminal Court (author 1034165)
+  court57     Freepik 422097282  Collection of Modern Editable Thin Line Style Court Related Law Icons Set (author 1034165)
+  health134   Freepik 419654571  Collection of Modern Editable Thin Stroke Line Style Medical Healthcare Related Icons Set (author 1034165)
+  protect109  Freepik 420565153  Collection of Modern Editable Thin Stroke Line Style Protection Related Icons Set (author 1034165)
+  vehicles50  Freepik 419999388  Vehicles linear icons, Vehicles and transport vector icons (author 564974)
+
+Licence: Freepik Premium licence (personal and commercial use, including client work, no attribution required for
+premium content). The icons may be used on the client's website and marketing. They may not be redistributed as an
+icon pack or sold on their own. Full terms: https://www.freepik.com/legal/terms-of-use
+
+The previous Lucide set (ISC) lives one folder up and is retired once the blueprints move to this set.
