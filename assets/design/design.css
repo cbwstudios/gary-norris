@@ -192,3 +192,49 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
   .cols--4, .bank, .results { grid-template-columns: minmax(0, 1fr); }
   .card { padding: var(--sp-5); }
 }
+
+/* ---------- round two (Christian, 7 Oct): the Canun shapes with our words ---------- */
+/* hero: navy field, Gary cut out and standing in a rounded-bottom frame that floats over a gold-ringed circle */
+.hero2 { background: var(--navy); color: var(--on-navy-soft); overflow: hidden; }
+.hero2 .wrap { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: var(--gap-l); align-items: center; padding-top: var(--section-y); min-height: 44rem; }
+.hero2__text { display: flex; flex-direction: column; gap: var(--sp-6); padding-bottom: calc(var(--section-y) + var(--sp-10)); }
+.hero2 h1 { color: var(--on-navy); }
+.hero2__figure { position: relative; align-self: end; height: 100%; min-height: 36rem; display: flex; align-items: flex-end; justify-content: center; }
+.hero2__ring { position: absolute; left: 50%; bottom: var(--sp-10); width: min(100%, 34rem); aspect-ratio: 1; transform: translateX(-50%); border-radius: var(--radius-full); background: var(--navy-3); box-shadow: inset 0 0 0 1px var(--on-navy-line), 0 0 0 var(--sp-5) var(--gold-20); }
+.hero2__frame { position: relative; width: min(100%, 30rem); height: calc(100% - var(--sp-6)); max-height: 40rem; border-radius: var(--radius-l) var(--radius-l) 50% 50% / var(--radius-l) var(--radius-l) 18% 18%; overflow: hidden; margin-bottom: var(--sp-10); box-shadow: var(--shadow-float); background: linear-gradient(180deg, var(--navy-3), var(--navy-2)); }
+.hero2__frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+/* three cards floating over the hero's edge, disc rising out of the card top, a faint watermark of the same icon */
+.trust2 { margin-top: calc(-1 * var(--sp-11)); position: relative; z-index: 1; }
+.trust2 .cols { align-items: stretch; }
+.tcard { position: relative; background: var(--white); border-radius: var(--radius-m); box-shadow: var(--shadow-float); padding: var(--sp-8) var(--sp-7) var(--sp-7); text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--sp-3); margin-top: calc(var(--disc) / 2); }
+.tcard .disc { margin-top: calc(-1 * var(--sp-8) - var(--disc) / 2); background: var(--white); box-shadow: var(--shadow-card); width: calc(var(--disc) * 1.15); height: calc(var(--disc) * 1.15); }
+.tcard .disc .icon { width: calc(var(--icon) * 1.15); height: calc(var(--icon) * 1.15); }
+.tcard .stars { height: calc(var(--icon) * 1.15); display: flex; align-items: center; }
+.tcard h3 { font-size: var(--fs-l); }
+.tcard p { color: var(--muted); font-size: var(--fs-s); max-width: 28ch; }
+.tcard__wm { position: absolute; inset: 0; overflow: hidden; border-radius: var(--radius-m); pointer-events: none; }
+.tcard .watermark { position: absolute; right: calc(-1 * var(--sp-4)); bottom: calc(-1 * var(--sp-4)); width: 7rem; height: 7rem; color: var(--navy); opacity: 0.05; }
+/* why: a navy panel of facts left, the gold-bar heading and two paragraphs right */
+.panel { background: var(--navy); color: var(--on-navy-soft); border-radius: var(--radius-m); padding: var(--sp-8); display: flex; flex-direction: column; gap: var(--sp-7); height: 100%; justify-content: center; }
+.panel .fact b { color: var(--on-navy); }
+.panel .fact p { color: var(--on-navy-soft); font-size: var(--fs-s); }
+.panel .disc { background: var(--on-navy-panel); box-shadow: inset 0 0 0 1px var(--on-navy-line); }
+/* services: six cards in a grid, then the rest as pills */
+.grid-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
+.scard { background: var(--white); border-radius: var(--radius-m); box-shadow: var(--shadow-card); padding: var(--sp-7); display: flex; flex-direction: column; gap: var(--sp-4); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.scard:hover { transform: translateY(-4px); box-shadow: var(--shadow-float); }
+.scard h3 { font-size: var(--fs-l); }
+.scard p { color: var(--muted); flex: 1; }
+.scard .link { align-self: flex-start; }
+.cloud { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-9); }
+.cloud a { display: inline-block; padding: var(--sp-2) var(--sp-5); border: 1.5px solid var(--line); border-radius: var(--radius-full); background: var(--white); color: var(--ink); font-weight: 600; font-size: var(--fs-s); }
+.cloud a:hover { border-color: var(--gold); color: var(--gold-d); }
+@media (max-width: 1024px) { .grid-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 820px) {
+  .hero2 .wrap { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .hero2__text { padding-bottom: var(--sp-6); }
+  .hero2__figure { min-height: 30rem; }
+  .trust2 { margin-top: calc(-1 * var(--sp-8)); }
+  .trust2 .cols { gap: calc(var(--gap) + var(--disc) / 2); }
+}
+@media (max-width: 520px) { .grid-cards { grid-template-columns: minmax(0, 1fr); } }
