@@ -5,7 +5,7 @@
   --navy: #29395B;          --navy-1: #1F2D4A;  --navy-2: #2F426B;  --navy-3: #3B5287;  --navy-4: #E7ECF3;   /* Canun's blue rgb(41,57,91); the circle is its rgb(47,66,107) */
   --footer: #1F2D4A;        /* the footer, one step darker than the hero */
   --navy-deep: #16213A;     /* the footer's bottom bar, darker again */
-  --gold: #E3B576;          --gold-d: #C99A5B;  --gold-l: #FBF4E2;  --gold-10: rgba(227, 181, 118, 0.12);  --gold-20: rgba(227, 181, 118, 0.25);   /* Canun's gold rgb(227,181,118) */
+  --gold: #B79E63;          --gold-d: #9C8550;  --gold-l: #FBF4E2;  --gold-10: rgba(183, 158, 99, 0.12);  --gold-20: rgba(183, 158, 99, 0.25);   /* Christian, 7 Oct */
   --link: #1D5FA8;
   --cream: #F6F2EA;         --white: #FFFFFF;
   --ink: #232F4B;   /* Canun's heading navy */           --body: #344054;    --muted: #667085;
