@@ -413,3 +413,20 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .collage__seal img { width: 180px; height: auto; display: block; border-radius: 10px; }
 .collage__seal .slbadge, .collage__seal .slbadge > * { display: block; }
 .collage__seal { padding: 0.35rem; border-radius: 14px; } .collage__seal img { width: 180px; border-radius: 10px; }
+
+/* ---------- section four (Christian, 7 Oct): Canun's practice areas, six cards then the rest as pills ---------- */
+.practice { background: var(--white); padding-block: var(--section-y) var(--section-y-s); }
+.practice .head { margin-bottom: var(--sp-9); }
+.pgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-5); }
+.pcard { background: var(--white); box-shadow: 0 5px 15px rgba(15, 27, 45, 0.10); padding: 3.125rem; display: flex; flex-direction: column; gap: var(--sp-4); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-float); }
+.pcard__icon { width: 5.125rem; height: 5.125rem; border-radius: var(--radius-full); background: #F5F5F7; display: grid; place-items: center; }
+.pcard__icon .icon { width: 2.25rem; height: 2.25rem; color: var(--gold); }
+.pcard h3 { font-family: var(--font-serif); font-weight: 600; font-size: 1.875rem; line-height: 1.2; color: var(--ink); margin-top: var(--sp-2); }
+.pcard h3 a { color: inherit; } .pcard h3 a:hover { color: var(--gold-d); }
+.pcard p { color: var(--muted); font-size: 1.125rem; line-height: 1.7; }
+.pcloud { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-9); }
+.pcloud a { display: inline-block; padding: var(--sp-2) var(--sp-5); border: 1.5px solid var(--line); border-radius: var(--radius-full); color: var(--ink); font-weight: 600; font-size: var(--fs-s); }
+.pcloud a:hover { border-color: var(--gold); color: var(--gold-d); }
+@media (max-width: 1024px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .pgrid { grid-template-columns: minmax(0, 1fr); } .pcard { padding: var(--sp-6); } }
