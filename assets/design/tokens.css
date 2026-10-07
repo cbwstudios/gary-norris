@@ -1,0 +1,48 @@
+/* Design tokens for the Law Office of Gary G. Norris. Every colour, size, space and radius the site uses is a
+   variable here; design.css only ever reads them. Values come from the Style Guide tab of the plan. */
+:root {
+  /* Colour */
+  --navy: #0F1B2D;          --navy-1: #152538;  --navy-2: #1C3350;  --navy-3: #274871;  --navy-4: #E7ECF3;
+  --navy-deep: #0A1320;     /* the footer's bottom bar, one step below the band */
+  --gold: #B8912A;          --gold-d: #8A6A16;  --gold-l: #FBF4E2;  --gold-10: rgba(184, 145, 42, 0.10);  --gold-20: rgba(184, 145, 42, 0.20);
+  --link: #1D5FA8;
+  --cream: #F6F2EA;         --white: #FFFFFF;
+  --ink: #0F1B2D;           --body: #344054;    --muted: #667085;
+  --on-navy: #FFFFFF;       --on-navy-soft: rgba(255, 255, 255, 0.78);  --on-navy-line: rgba(255, 255, 255, 0.14);  --on-navy-panel: rgba(255, 255, 255, 0.06);
+  --line: rgba(15, 27, 45, 0.10);
+
+  /* Type: Playfair Display for display, Poppins for everything else. Fluid from 360 to 1440. */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-xs:  clamp(0.72rem, 0.70rem + 0.10vw, 0.78rem);
+  --fs-s:   clamp(0.84rem, 0.80rem + 0.15vw, 0.92rem);
+  --fs-m:   clamp(0.96rem, 0.92rem + 0.20vw, 1.06rem);   /* body, 15.4 to 17 */
+  --fs-l:   clamp(1.08rem, 1.00rem + 0.35vw, 1.28rem);   /* lede */
+  --fs-xl:  clamp(1.25rem, 1.10rem + 0.60vw, 1.60rem);   /* H3, H1 sub line */
+  --fs-2xl: clamp(1.60rem, 1.30rem + 1.20vw, 2.30rem);   /* figures */
+  --fs-3xl: clamp(2.00rem, 1.55rem + 1.90vw, 3.00rem);   /* H2, 32 to 48 */
+  --fs-4xl: clamp(2.60rem, 1.90rem + 2.90vw, 4.20rem);   /* H1, 42 to 67 */
+  --lh-tight: 1.08;  --lh-head: 1.15;  --lh-body: 1.65;
+  --track-caps: 0.14em;
+
+  /* Space: one scale, used for gaps, padding and section rhythm */
+  --sp-1: 0.25rem;  --sp-2: 0.5rem;  --sp-3: 0.75rem;  --sp-4: 1rem;  --sp-5: 1.5rem;  --sp-6: 2rem;
+  --sp-7: 2.5rem;   --sp-8: 3rem;    --sp-9: 4rem;     --sp-10: 5rem; --sp-11: 6rem;  --sp-12: 7.5rem;
+  --section-y: clamp(4.5rem, 3rem + 6vw, 7.5rem);        /* 72 to 120 */
+  --section-y-s: clamp(3rem, 2rem + 4vw, 5rem);
+  --gap: clamp(1.5rem, 1rem + 2.5vw, 3rem);               /* column gap, 24 to 48 */
+  --gap-l: clamp(2rem, 1.5rem + 4vw, 5rem);
+
+  /* Layout */
+  --container: 1300px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --measure: 62ch;
+
+  /* Shape */
+  --radius-s: 4px;  --radius-m: 8px;  --radius-l: 12px;  --radius-full: 999px;
+  --shadow-card: 0 10px 30px rgba(15, 27, 45, 0.08), 0 1px 2px rgba(15, 27, 45, 0.06);
+  --shadow-float: 0 24px 48px rgba(15, 27, 45, 0.14), 0 2px 4px rgba(15, 27, 45, 0.08);
+  --bar-w: 4px;             /* the gold bar beside headings */
+  --disc: 4.5rem;           /* the circle behind an icon */
+  --icon: 1.75rem;
+}

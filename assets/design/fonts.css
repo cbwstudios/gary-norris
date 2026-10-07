@@ -1,0 +1,6 @@
+/* Self-hosted web fonts, latin subset, SIL Open Font License. Sourced from Google Fonts. Font faces only; everything else is tokens.css and design.css. */
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/playfair-display-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("../fonts/playfair-display-variable.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/poppins-400.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/poppins-600.woff2") format("woff2"); }
+@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/cinzel-400.woff2") format("woff2"); }
