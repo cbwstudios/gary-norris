@@ -412,3 +412,4 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .collage__seal { width: auto; padding: 0.35rem; border: 0; }
 .collage__seal img { width: 180px; height: auto; display: block; border-radius: 10px; }
 .collage__seal .slbadge, .collage__seal .slbadge > * { display: block; }
+.collage__seal { padding: 0.35rem; border-radius: 14px; } .collage__seal img { width: 180px; border-radius: 10px; }
