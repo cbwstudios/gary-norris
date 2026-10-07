@@ -431,3 +431,5 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 @media (max-width: 1024px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .pgrid { grid-template-columns: minmax(0, 1fr); } .pcard { padding: var(--sp-6); } }
 .collage__seal { border-radius: calc(18px + 0.35rem); } .collage__seal img { border-radius: 18px; }
+.head { align-items: start; }
+.head__lede { padding-top: 0.35em; }
