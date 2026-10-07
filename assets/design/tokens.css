@@ -8,7 +8,7 @@
   --link: #1D5FA8;
   --cream: #F6F2EA;         --white: #FFFFFF;
   --ink: #0F1B2D;           --body: #344054;    --muted: #667085;
-  --on-navy: #FFFFFF;       --on-navy-soft: rgba(255, 255, 255, 0.78);  --on-navy-line: rgba(255, 255, 255, 0.14);  --on-navy-panel: rgba(255, 255, 255, 0.06);
+  --on-navy: #FFFFFF;       --on-navy-soft: rgba(255, 255, 255, 0.78);  --on-navy-line: rgba(255, 255, 255, 0.14);  --on-navy-panel: rgba(255, 255, 255, 0.06);  --on-navy-faint: rgba(255, 255, 255, 0.45);
   --line: rgba(15, 27, 45, 0.10);
 
   /* Type: Playfair Display for display, Poppins for everything else. Fluid from 360 to 1440. */
