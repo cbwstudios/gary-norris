@@ -353,3 +353,18 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .fcard__icon { margin-top: 0; margin-bottom: var(--sp-5); box-shadow: 0 5px 15px rgba(15, 27, 45, 0.10); }
 .fcard__icon::before { display: none; }
 .fcard__wm--star { font-size: 6rem; line-height: 1; right: -0.5rem; bottom: -1.2rem; width: auto; height: auto; }
+
+/* ---------- section three (Christian, 7 Oct): the collage from his reference, text right ---------- */
+.about { background: var(--cream); padding-block: var(--section-y); }
+.about .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gap-l); align-items: center; }
+.collage { position: relative; aspect-ratio: 675 / 745; }
+.collage__main { position: absolute; left: 18%; top: 0; width: 82%; height: 86%; object-fit: cover; object-position: 50% 78%; }
+.collage__side { position: absolute; left: 0; top: 23%; width: 46%; aspect-ratio: 4 / 5; object-fit: cover; border: 6px solid var(--cream); box-shadow: var(--shadow-card); }
+.collage__seal { position: absolute; right: 0; bottom: 0; width: 40%; background: var(--gold); padding: var(--sp-5); display: flex; flex-direction: column; align-items: center; gap: var(--sp-3); box-shadow: var(--shadow-card); color: var(--navy); text-decoration: none; }
+.collage__seal img { width: 100%; max-width: 11rem; height: auto; }
+.collage__seal span { font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-align: center; }
+.collage__seal:hover { background: var(--gold-d); color: var(--white); }
+.about__text { display: flex; flex-direction: column; gap: var(--sp-2); }
+.about__text .head { margin-bottom: var(--sp-2); }
+.about__text .prose p { color: var(--body); }
+@media (max-width: 820px) { .about .wrap { grid-template-columns: minmax(0, 1fr); } .collage { max-width: 32rem; } }
