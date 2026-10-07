@@ -7,7 +7,7 @@
   --navy-deep: #16213A;     /* the footer's bottom bar, darker again */
   --gold: #B79E63;          --gold-d: #9C8550;  --gold-l: #FBF4E2;  --gold-10: rgba(183, 158, 99, 0.12);  --gold-20: rgba(183, 158, 99, 0.25);   /* Christian, 7 Oct */
   --link: #1D5FA8;
-  --cream: #F6F2EA;         --white: #FFFFFF;
+  --cream: #F6F3F0;   /* Christian, 7 Oct */         --white: #FFFFFF;
   --ink: #232F4B;   /* Canun's heading navy */           --body: #344054;    --muted: #667085;
   --on-navy: #FFFFFF;       --on-navy-soft: rgba(255, 255, 255, 0.78);  --on-navy-line: rgba(255, 255, 255, 0.14);  --on-navy-panel: rgba(255, 255, 255, 0.06);  --on-navy-faint: rgba(255, 255, 255, 0.45);
   --line: rgba(15, 27, 45, 0.10);
