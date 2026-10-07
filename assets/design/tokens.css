@@ -2,12 +2,13 @@
    variable here; design.css only ever reads them. Values come from the Style Guide tab of the plan. */
 :root {
   /* Colour */
-  --navy: #0F1B2D;          --navy-1: #152538;  --navy-2: #1C3350;  --navy-3: #274871;  --navy-4: #E7ECF3;
-  --navy-deep: #0A1320;     /* the footer's bottom bar, one step below the band */
-  --gold: #B8912A;          --gold-d: #8A6A16;  --gold-l: #FBF4E2;  --gold-10: rgba(184, 145, 42, 0.10);  --gold-20: rgba(184, 145, 42, 0.20);
+  --navy: #29395B;          --navy-1: #1F2D4A;  --navy-2: #2F426B;  --navy-3: #3B5287;  --navy-4: #E7ECF3;   /* Canun's blue rgb(41,57,91); the circle is its rgb(47,66,107) */
+  --footer: #1F2D4A;        /* the footer, one step darker than the hero */
+  --navy-deep: #16213A;     /* the footer's bottom bar, darker again */
+  --gold: #E3B576;          --gold-d: #C99A5B;  --gold-l: #FBF4E2;  --gold-10: rgba(227, 181, 118, 0.12);  --gold-20: rgba(227, 181, 118, 0.25);   /* Canun's gold rgb(227,181,118) */
   --link: #1D5FA8;
   --cream: #F6F2EA;         --white: #FFFFFF;
-  --ink: #0F1B2D;           --body: #344054;    --muted: #667085;
+  --ink: #232F4B;   /* Canun's heading navy */           --body: #344054;    --muted: #667085;
   --on-navy: #FFFFFF;       --on-navy-soft: rgba(255, 255, 255, 0.78);  --on-navy-line: rgba(255, 255, 255, 0.14);  --on-navy-panel: rgba(255, 255, 255, 0.06);  --on-navy-faint: rgba(255, 255, 255, 0.45);
   --line: rgba(15, 27, 45, 0.10);
 

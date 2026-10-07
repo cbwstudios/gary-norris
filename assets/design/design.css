@@ -385,3 +385,15 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .point__check { width: 1.4rem; height: 1.4rem; border-radius: var(--radius-full); background: var(--gold); color: var(--white); display: inline-grid; place-items: center; flex: 0 0 auto; }
 .point__check svg { width: 0.85rem; height: 0.85rem; }
 .collage__main { object-position: 50% 62%; }
+
+/* Christian, 7 Oct: white text on gold buttons; footer in the darker blues; the seal block white; the hero circle in Canun's lighter blue */
+.btn--gold { color: var(--white); }
+.btn--gold:hover { background: var(--gold-d); border-color: var(--gold-d); color: var(--white); }
+.ftr { background: var(--footer); }
+.ftr-bar { background: var(--navy-deep); }
+.hero3__circle { background: var(--navy-2); }
+.collage__seal { background: var(--white); color: var(--ink); }
+.collage__seal:hover { background: var(--white); color: var(--gold-d); }
+.collage__seal span { color: var(--ink); }
+.head__title br { display: none; }
+@media (min-width: 821px) { .head__title br { display: inline; } }
