@@ -43,6 +43,8 @@
   --radius-s: 4px;  --radius-m: 8px;  --radius-l: 12px;  --radius-full: 999px;
   --shadow-card: 0 10px 30px rgba(15, 27, 45, 0.08), 0 1px 2px rgba(15, 27, 45, 0.06);
   --shadow-float: 0 24px 48px rgba(15, 27, 45, 0.14), 0 2px 4px rgba(15, 27, 45, 0.08);
+  --shadow-wordmark: 0 2px 8px rgba(0, 0, 0, 0.35);   /* behind the white wordmark on the hero (Christian, 8 Oct) */
+  --shadow-header: 0 6px 24px rgba(15, 27, 45, 0.10);   /* the stuck header */
   --bar-w: 4px;             /* the gold bar beside headings */
   --disc: 4.5rem;           /* the circle behind an icon */
   --icon: 1.75rem;
