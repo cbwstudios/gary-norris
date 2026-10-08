@@ -503,14 +503,13 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 
 /* ---------- Header, sticky and the Areas of practice panel (Christian, 8 Oct) ---------- */
 .hdr { transition: background-color 0.25s ease, box-shadow 0.25s ease; }
-.hdr .wordmark img { filter: drop-shadow(var(--shadow-wordmark)); }
-.hdr .wordmark .wordmark--dark { display: none; }
+.hdr .wordmark { display: flex; flex-direction: column; align-items: flex-start; font-family: var(--font-serif); font-weight: 600; font-variant: small-caps; line-height: var(--lh-tight); color: var(--on-navy); text-shadow: var(--shadow-wordmark); }
+.wordmark__top { font-size: var(--fs-xs); letter-spacing: var(--track-caps); }
+.wordmark__name { font-size: var(--fs-2xl); letter-spacing: 0.02em; white-space: nowrap; }
+.hdr.is-stuck .wordmark { color: var(--navy); text-shadow: none; }
 .hdr .nav a { font-size: calc(var(--fs-m) * 1.1); }
 .nav a.has-menu::after { border-color: currentColor; }
 .hdr.is-stuck { position: fixed; background: var(--white); box-shadow: var(--shadow-header); }
-.hdr.is-stuck .wordmark img { filter: none; }
-.hdr.is-stuck .wordmark .wordmark--light { display: none; }
-.hdr.is-stuck .wordmark .wordmark--dark { display: block; }
 .hdr.is-stuck .nav a, .hdr.is-stuck .hdr__call { color: var(--navy); }
 .hdr.is-stuck .nav a:hover { color: var(--gold); }
 .hdr.is-stuck .hdr__call { background: var(--navy-4); border-color: var(--line); }
@@ -539,6 +538,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
   .hdr .nav { display: none; order: 9; grid-column: 1 / -1; flex-direction: column; align-items: stretch; gap: var(--sp-3); padding-block: var(--sp-3); }
   .hdr.nav-open .nav { display: flex; }
   .hdr .nav a { font-size: var(--fs-m); }
+  .wordmark__name { font-size: var(--fs-xl); }
   .menu > .mega { position: static; display: none; opacity: 1; visibility: visible; transform: none; background: none; border: 0; box-shadow: none; color: inherit; }
   .menu.is-open > .mega { display: block; }
   .hdr .mega .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); padding: var(--sp-3) 0 var(--sp-2) var(--sp-3); }
