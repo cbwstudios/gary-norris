@@ -539,6 +539,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
   .hdr.nav-open .nav { display: flex; }
   .hdr .nav a { font-size: var(--fs-m); }
   .wordmark__name { font-size: var(--fs-xl); }
+  .hdr__call { white-space: nowrap; padding: 0.7em 1em; font-size: var(--fs-s); }
   .menu > .mega { position: static; display: none; opacity: 1; visibility: visible; transform: none; background: none; border: 0; box-shadow: none; color: inherit; }
   .menu.is-open > .mega { display: block; }
   .hdr .mega .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); padding: var(--sp-3) 0 var(--sp-2) var(--sp-3); }
