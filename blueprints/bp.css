@@ -1,6 +1,6 @@
 /* Blueprint annotation chrome only: note pins, the gear panel, image and copy placeholders, and the
    accessibility helpers. Deliberately NOT part of the site design and never shipped with the site.
-   Everything that looks like the site comes from assets/core/ggn.css, generated from ggn.core. */
+   Everything that looks like the site comes from assets/design/tokens.css and design.css. */
 .skip{position:absolute;left:-999px;top:8px;z-index:500;background:#fff;color:#0F1B2D;padding:8px 12px;border-radius:4px;font-weight:700}
 .skip:focus{left:8px}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
