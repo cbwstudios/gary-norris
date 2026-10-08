@@ -45,3 +45,7 @@ body.pins-off .pin{display:none}
 .bp-panel .bp-back:hover{background:#8E70D2}
 .bp-panel .bp-back.alt{background:transparent;border:1px solid #7C5CC4}
 @media(max-width:700px){.bp-panel{right:8px;top:auto;bottom:84px;width:calc(100vw - 16px);max-height:60vh}.bp-gear{top:auto;bottom:100px}}
+
+/* Sections not yet drawn on the redesign: a plain block in the page's own tokens around a .ph note (Cowork, 8 Oct). */
+.to-come{background:var(--cream);padding-block:var(--section-y-s)}
+.to-come .ph{margin:0;font-family:var(--font-serif);font-size:var(--fs-xl);color:var(--ink)}
