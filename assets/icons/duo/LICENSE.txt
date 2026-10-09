@@ -1,0 +1,27 @@
+GGN two-tone icon set
+
+Source: fifteen vector icon sets by the Freepik author endofparves (author id 89973631, the "Vector solid icons
+collection" series), licensed through Christian's Magnific (Freepik) Premium account on 9 October 2026 and
+extracted into two-layer SVGs (one file per icon, plus sprite.svg) for the Law Office of Gary G. Norris website.
+
+  credibility  Freepik 432565292  Credibility and legal icon set
+  justice      Freepik 432565028  Justice and legal system icon set
+  trust        Freepik 433571228  Trust and justice concept icon set
+  regulation   Freepik 433571330  Regulation and law enforcement icon set
+  promise      Freepik 432565252  Commitment and promise icon set
+  insurance    Freepik 432564993  Insurance and assurance icon set
+  risk         Freepik 432565265  Insurance and risk management icon set
+  emergency    Freepik 432565159  Emergency and medical services icon set
+  checkup      Freepik 432565026  Medical health checkup icon set
+  anatomy      Freepik 432565168  Human anatomy icon set
+  logistics    Freepik 433571214  Transportation and logistics icon set
+  transport    Freepik 433571243  Transportation icon set
+  security     Freepik 433571335  Security and surveillance icon set
+  population   Freepik 433571262  Population and community icon set
+  rating       Freepik 433571313  Rating and business symbol icon set
+
+Licence: Freepik Premium licence (personal and commercial use, including client work, no attribution required for
+premium content). The icons may be used on the client's website and marketing. They may not be redistributed as an
+icon pack or sold on their own. Full terms: https://www.freepik.com/legal/terms-of-use
+
+The earlier thin-line set in ../legal/ is retired once no page references it.

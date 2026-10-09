@@ -1,0 +1,8 @@
+/* Two-tone icons: every file has <path class="t1"> (the dark shape) and, usually, <path class="t2"> (the accent).
+   No colour lives in the files. Set the two variables on any ancestor and every icon inside follows. */
+/* The paths carry fill="var(--icon-1)" and fill="var(--icon-2)" themselves, so this works inline and through <use>. */
+:root { --icon-1: var(--navy); --icon-2: var(--gold); }
+.icon { width: 1.75rem; height: 1.75rem; display: inline-block; vertical-align: middle; }
+.icon--mono { --icon-2: var(--icon-1); }                 /* one colour */
+.icon--gold { --icon-1: var(--gold); --icon-2: var(--navy); }  /* swapped */
+.on-navy .icon, .icon--on-navy { --icon-1: var(--white); --icon-2: var(--gold); }  /* on the band or the footer */
