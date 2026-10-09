@@ -36,22 +36,10 @@
   "two_tone": true
  },
  {
-  "name": "key",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
- },
- {
   "name": "ring",
   "set": "credibility",
   "freepik_id": 432565292,
   "two_tone": true
- },
- {
-  "name": "anchor",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
  },
  {
   "name": "signature-pen",
@@ -60,34 +48,10 @@
   "two_tone": true
  },
  {
-  "name": "rosette",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
- },
- {
-  "name": "laurel-wreath",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
- },
- {
-  "name": "scales",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
- },
- {
   "name": "rosette-check",
   "set": "credibility",
   "freepik_id": 432565292,
   "two_tone": true
- },
- {
-  "name": "pillar",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
  },
  {
   "name": "podium",
@@ -108,22 +72,10 @@
   "two_tone": true
  },
  {
-  "name": "scroll-seal",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
- },
- {
   "name": "shield",
   "set": "credibility",
   "freepik_id": 432565292,
   "two_tone": true
- },
- {
-  "name": "check-mark",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
  },
  {
   "name": "compass",
@@ -142,12 +94,6 @@
   "set": "credibility",
   "freepik_id": 432565292,
   "two_tone": true
- },
- {
-  "name": "quill",
-  "set": "credibility",
-  "freepik_id": 432565292,
-  "two_tone": false
  },
  {
   "name": "monocle",
@@ -184,12 +130,6 @@
   "set": "justice",
   "freepik_id": 432565028,
   "two_tone": true
- },
- {
-  "name": "prison-bars",
-  "set": "justice",
-  "freepik_id": 432565028,
-  "two_tone": false
  },
  {
   "name": "judge-bench",
@@ -456,12 +396,6 @@
   "two_tone": true
  },
  {
-  "name": "heart",
-  "set": "trust",
-  "freepik_id": 433571228,
-  "two_tone": false
- },
- {
   "name": "gears",
   "set": "trust",
   "freepik_id": 433571228,
@@ -504,22 +438,10 @@
   "two_tone": true
  },
  {
-  "name": "warning-triangle",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
- },
- {
   "name": "chart-board",
   "set": "regulation",
   "freepik_id": 433571330,
   "two_tone": true
- },
- {
-  "name": "no-entry",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
  },
  {
   "name": "camera",
@@ -538,12 +460,6 @@
   "set": "regulation",
   "freepik_id": 433571330,
   "two_tone": true
- },
- {
-  "name": "prison-bars-2",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
  },
  {
   "name": "pillar-2",
@@ -594,12 +510,6 @@
   "two_tone": true
  },
  {
-  "name": "barbed-wire",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
- },
- {
   "name": "licence-revoked",
   "set": "regulation",
   "freepik_id": 433571330,
@@ -640,30 +550,6 @@
   "set": "regulation",
   "freepik_id": 433571330,
   "two_tone": true
- },
- {
-  "name": "traffic-cone",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
- },
- {
-  "name": "passport",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
- },
- {
-  "name": "sheriff-star",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
- },
- {
-  "name": "judge-robe",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
  },
  {
   "name": "traffic-light",
@@ -712,12 +598,6 @@
   "set": "regulation",
   "freepik_id": 433571330,
   "two_tone": true
- },
- {
-  "name": "barrier-tape",
-  "set": "regulation",
-  "freepik_id": 433571330,
-  "two_tone": false
  },
  {
   "name": "signed-document",
@@ -798,22 +678,10 @@
   "two_tone": true
  },
  {
-  "name": "fist",
-  "set": "promise",
-  "freepik_id": 432565252,
-  "two_tone": false
- },
- {
   "name": "ribbon-band",
   "set": "promise",
   "freepik_id": 432565252,
   "two_tone": true
- },
- {
-  "name": "knot",
-  "set": "promise",
-  "freepik_id": 432565252,
-  "two_tone": false
  },
  {
   "name": "scroll-seal-3",
@@ -894,12 +762,6 @@
   "two_tone": true
  },
  {
-  "name": "wheelchair",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
   "name": "plus-circle",
   "set": "insurance",
   "freepik_id": 432564993,
@@ -936,18 +798,6 @@
   "two_tone": true
  },
  {
-  "name": "hard-hat",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
-  "name": "glasses",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
   "name": "flood",
   "set": "insurance",
   "freepik_id": 432564993,
@@ -970,12 +820,6 @@
   "set": "insurance",
   "freepik_id": 432564993,
   "two_tone": true
- },
- {
-  "name": "gavel-7",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
  },
  {
   "name": "fire-extinguisher-2",
@@ -1014,34 +858,10 @@
   "two_tone": true
  },
  {
-  "name": "car-crash",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
-  "name": "cheque",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
   "name": "stethoscope",
   "set": "insurance",
   "freepik_id": 432564993,
   "two_tone": true
- },
- {
-  "name": "broken-glass",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
-  "name": "traffic-cone-2",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
  },
  {
   "name": "siren-2",
@@ -1056,22 +876,10 @@
   "two_tone": true
  },
  {
-  "name": "rain-cloud",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
- },
- {
   "name": "certificate-4",
   "set": "insurance",
   "freepik_id": 432564993,
   "two_tone": true
- },
- {
-  "name": "wrench",
-  "set": "insurance",
-  "freepik_id": 432564993,
-  "two_tone": false
  },
  {
   "name": "stamp-6",
@@ -1098,12 +906,6 @@
   "two_tone": true
  },
  {
-  "name": "padlock-2",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
- },
- {
   "name": "broken-window",
   "set": "risk",
   "freepik_id": 432565265,
@@ -1114,24 +916,6 @@
   "set": "risk",
   "freepik_id": 432565265,
   "two_tone": true
- },
- {
-  "name": "money-stack",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
- },
- {
-  "name": "wheelchair-2",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
- },
- {
-  "name": "umbrella",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
  },
  {
   "name": "house",
@@ -1152,12 +936,6 @@
   "two_tone": true
  },
  {
-  "name": "dollar-coin",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
- },
- {
   "name": "bar-chart",
   "set": "risk",
   "freepik_id": 432565265,
@@ -1170,22 +948,10 @@
   "two_tone": true
  },
  {
-  "name": "gavel-8",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
- },
- {
   "name": "car-key",
   "set": "risk",
   "freepik_id": 432565265,
   "two_tone": true
- },
- {
-  "name": "plus-cross",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
  },
  {
   "name": "rosette-4",
@@ -1204,12 +970,6 @@
   "set": "risk",
   "freepik_id": 432565265,
   "two_tone": true
- },
- {
-  "name": "ruler",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
  },
  {
   "name": "shield-2",
@@ -1234,12 +994,6 @@
   "set": "risk",
   "freepik_id": 432565265,
   "two_tone": true
- },
- {
-  "name": "water-drop",
-  "set": "risk",
-  "freepik_id": 432565265,
-  "two_tone": false
  },
  {
   "name": "clipboard-check",
@@ -1416,12 +1170,6 @@
   "two_tone": true
  },
  {
-  "name": "tongue-depressor",
-  "set": "checkup",
-  "freepik_id": 432565026,
-  "two_tone": false
- },
- {
   "name": "tuning-fork",
   "set": "checkup",
   "freepik_id": 432565026,
@@ -1474,12 +1222,6 @@
   "set": "checkup",
   "freepik_id": 432565026,
   "two_tone": true
- },
- {
-  "name": "bandage-roll-2",
-  "set": "checkup",
-  "freepik_id": 432565026,
-  "two_tone": false
  },
  {
   "name": "weighing-scale",
@@ -1596,12 +1338,6 @@
   "two_tone": true
  },
  {
-  "name": "tweezers",
-  "set": "checkup",
-  "freepik_id": 432565026,
-  "two_tone": false
- },
- {
   "name": "specimen-cup-2",
   "set": "checkup",
   "freepik_id": 432565026,
@@ -1614,22 +1350,10 @@
   "two_tone": true
  },
  {
-  "name": "intestine",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
   "name": "stomach",
   "set": "anatomy",
   "freepik_id": 432565168,
   "two_tone": true
- },
- {
-  "name": "skin",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
  },
  {
   "name": "eye",
@@ -1650,18 +1374,6 @@
   "two_tone": true
  },
  {
-  "name": "hand-bones",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
-  "name": "small-intestine",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
   "name": "tooth",
   "set": "anatomy",
   "freepik_id": 432565168,
@@ -1672,12 +1384,6 @@
   "set": "anatomy",
   "freepik_id": 432565168,
   "two_tone": true
- },
- {
-  "name": "ribcage",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
  },
  {
   "name": "tongue",
@@ -1695,13 +1401,7 @@
   "name": "spine",
   "set": "anatomy",
   "freepik_id": 432565168,
-  "two_tone": false
- },
- {
-  "name": "gallbladder",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
+  "two_tone": true
  },
  {
   "name": "heart-anatomy",
@@ -1725,31 +1425,13 @@
   "name": "brain",
   "set": "anatomy",
   "freepik_id": 432565168,
-  "two_tone": false
+  "two_tone": true
  },
  {
   "name": "neuron",
   "set": "anatomy",
   "freepik_id": 432565168,
   "two_tone": true
- },
- {
-  "name": "skull",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
-  "name": "bone",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
-  "name": "larynx",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
  },
  {
   "name": "dna",
@@ -1764,22 +1446,10 @@
   "two_tone": true
  },
  {
-  "name": "bladder",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
- },
- {
   "name": "artery",
   "set": "anatomy",
   "freepik_id": 432565168,
   "two_tone": true
- },
- {
-  "name": "trachea",
-  "set": "anatomy",
-  "freepik_id": 432565168,
-  "two_tone": false
  },
  {
   "name": "muscle",
@@ -1836,18 +1506,6 @@
   "two_tone": true
  },
  {
-  "name": "propeller",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
- },
- {
-  "name": "motorcycle",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
- },
- {
   "name": "forklift",
   "set": "logistics",
   "freepik_id": 433571214,
@@ -1858,12 +1516,6 @@
   "set": "logistics",
   "freepik_id": 433571214,
   "two_tone": true
- },
- {
-  "name": "submarine",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
  },
  {
   "name": "rocket",
@@ -1896,18 +1548,6 @@
   "two_tone": true
  },
  {
-  "name": "wheelchair-4",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
- },
- {
-  "name": "bus",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
- },
- {
   "name": "hot-air-balloon",
   "set": "logistics",
   "freepik_id": 433571214,
@@ -1926,22 +1566,10 @@
   "two_tone": true
  },
  {
-  "name": "sailboat",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
- },
- {
   "name": "tram",
   "set": "logistics",
   "freepik_id": 433571214,
   "two_tone": true
- },
- {
-  "name": "stop-sign-2",
-  "set": "logistics",
-  "freepik_id": 433571214,
-  "two_tone": false
  },
  {
   "name": "tractor",
@@ -1968,22 +1596,10 @@
   "two_tone": true
  },
  {
-  "name": "parachute",
-  "set": "transport",
-  "freepik_id": 433571243,
-  "two_tone": false
- },
- {
   "name": "compass-3",
   "set": "transport",
   "freepik_id": 433571243,
   "two_tone": true
- },
- {
-  "name": "anchor-4",
-  "set": "transport",
-  "freepik_id": 433571243,
-  "two_tone": false
  },
  {
   "name": "airplane-3",
@@ -2046,12 +1662,6 @@
   "two_tone": true
  },
  {
-  "name": "airplane-4",
-  "set": "transport",
-  "freepik_id": 433571243,
-  "two_tone": false
- },
- {
   "name": "car",
   "set": "transport",
   "freepik_id": 433571243,
@@ -2098,12 +1708,6 @@
   "set": "transport",
   "freepik_id": 433571243,
   "two_tone": true
- },
- {
-  "name": "tram-2",
-  "set": "transport",
-  "freepik_id": 433571243,
-  "two_tone": false
  },
  {
   "name": "railroad",
@@ -2154,22 +1758,10 @@
   "two_tone": true
  },
  {
-  "name": "fingerprint-2",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
- },
- {
   "name": "telephone",
   "set": "security",
   "freepik_id": 433571335,
   "two_tone": true
- },
- {
-  "name": "baton",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
  },
  {
   "name": "fire-extinguisher-5",
@@ -2184,12 +1776,6 @@
   "two_tone": true
  },
  {
-  "name": "chain-link",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
- },
- {
   "name": "padlock-phone",
   "set": "security",
   "freepik_id": 433571335,
@@ -2200,12 +1786,6 @@
   "set": "security",
   "freepik_id": 433571335,
   "two_tone": true
- },
- {
-  "name": "handcuffs-5",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
  },
  {
   "name": "traffic-cone-3",
@@ -2220,22 +1800,10 @@
   "two_tone": true
  },
  {
-  "name": "barbed-wire-2",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
- },
- {
   "name": "safe-3",
   "set": "security",
   "freepik_id": 433571335,
   "two_tone": true
- },
- {
-  "name": "watchtower",
-  "set": "security",
-  "freepik_id": 433571335,
-  "two_tone": false
  },
  {
   "name": "guard-dog",
@@ -2406,12 +1974,6 @@
   "two_tone": true
  },
  {
-  "name": "passport-3",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
- },
- {
   "name": "stadium",
   "set": "population",
   "freepik_id": 433571262,
@@ -2454,40 +2016,16 @@
   "two_tone": true
  },
  {
-  "name": "office-building",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
- },
- {
   "name": "bus-3",
   "set": "population",
   "freepik_id": 433571262,
   "two_tone": true
  },
  {
-  "name": "park",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
- },
- {
   "name": "id-badge",
   "set": "population",
   "freepik_id": 433571262,
   "two_tone": true
- },
- {
-  "name": "gravestone",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
- },
- {
-  "name": "bridge",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
  },
  {
   "name": "globe-pin",
@@ -2500,18 +2038,6 @@
   "set": "population",
   "freepik_id": 433571262,
   "two_tone": true
- },
- {
-  "name": "house-2",
-  "set": "population",
-  "freepik_id": 433571262,
-  "two_tone": false
- },
- {
-  "name": "diamond",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
  },
  {
   "name": "numbered-list",
@@ -2544,12 +2070,6 @@
   "two_tone": true
  },
  {
-  "name": "growth-chart",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
- },
- {
   "name": "shield-quarters-2",
   "set": "rating",
   "freepik_id": 433571313,
@@ -2566,12 +2086,6 @@
   "set": "rating",
   "freepik_id": 433571313,
   "two_tone": true
- },
- {
-  "name": "speech-bubble",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
  },
  {
   "name": "speedometer",
@@ -2598,12 +2112,6 @@
   "two_tone": true
  },
  {
-  "name": "percent",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
- },
- {
   "name": "trophy",
   "set": "rating",
   "freepik_id": 433571313,
@@ -2620,12 +2128,6 @@
   "set": "rating",
   "freepik_id": 433571313,
   "two_tone": true
- },
- {
-  "name": "heart-2",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
  },
  {
   "name": "cross-mark",
@@ -2656,12 +2158,6 @@
   "set": "rating",
   "freepik_id": 433571313,
   "two_tone": true
- },
- {
-  "name": "podium-ranks",
-  "set": "rating",
-  "freepik_id": 433571313,
-  "two_tone": false
  },
  {
   "name": "user",

@@ -94,7 +94,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .disc--navy { background: var(--on-navy-panel); }
 /* Two-tone icons (duo set, 9 Oct): every file has a dark path on --icon-1 and an accent path on --icon-2; no colour in the files. */
 :root { --icon-1: var(--navy); --icon-2: var(--gold); }
-.icon { width: var(--icon); height: var(--icon); color: var(--gold); flex: 0 0 auto; }
+.icon { width: var(--icon); height: var(--icon); color: var(--gold); flex: 0 0 auto; overflow: visible; }
 .icon--mono { --icon-2: var(--icon-1); }
 .icon--gold { --icon-1: var(--gold); --icon-2: var(--navy); }
 .on-navy .icon, .icon--on-navy { --icon-1: var(--white); --icon-2: var(--gold); }
