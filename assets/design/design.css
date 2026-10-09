@@ -62,7 +62,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 
 /* ---------- buttons ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); padding: 0.95em 1.9em; font-family: var(--font-sans); font-size: var(--fs-s); font-weight: 600; line-height: 1.2; border-radius: var(--radius-s); border: 1.5px solid transparent; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
-.btn--gold { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+.btn--gold { background: var(--gold); border-color: var(--gold); color: var(--white); }   /* white text (Christian, 9 Oct) */
 .btn--gold:hover { background: var(--gold-d); border-color: var(--gold-d); color: var(--white); }
 .btn--navy { background: var(--navy); border-color: var(--navy); color: var(--white); }
 .btn--navy:hover { background: var(--navy-3); border-color: var(--navy-3); }
@@ -315,7 +315,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .ftr-bar .legal { display: flex; flex-wrap: wrap; gap: var(--sp-6); }
 .ftr-bar .disclaimer { flex-basis: 100%; text-align: center; display: flex; flex-direction: column; gap: 0; margin: 0; padding-top: var(--sp-4); border-top: 1px solid var(--on-navy-line); font-size: var(--fs-xs); max-width: none; line-height: 1.7; }
 .btn--call { background: transparent; border-color: var(--on-navy-line); color: var(--on-navy); border-radius: 0; padding: 1em 1.8em; }
-.btn--call:hover { border-color: var(--gold); color: var(--gold); }
+.btn--call:hover { border-color: var(--white); color: var(--white); }   /* hover to white, not gold (Christian, 9 Oct) */
 .btn--call .icon { width: 1.1rem; height: 1.1rem; color: var(--gold); }
 @media (max-width: 820px) { .ftr .wrap { grid-template-columns: minmax(0, 1fr); } .ftr-bar .wrap { justify-content: center; text-align: center; } }
 
@@ -394,8 +394,6 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .collage__main { object-position: 50% 62%; }
 
 /* Christian, 7 Oct: white text on gold buttons; footer in the darker blues; the seal block white; the hero circle in Canun's lighter blue */
-.btn--gold { color: var(--white); }
-.btn--gold:hover { background: var(--gold-d); border-color: var(--gold-d); color: var(--white); }
 .ftr { background: var(--footer); }
 .ftr-bar { background: var(--navy-deep); }
 .hero3__circle { background: var(--navy-2); }
@@ -412,8 +410,6 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .collage__seal { width: 34%; padding: 0; background: var(--white); border: 5px solid var(--white); border-radius: 10%; overflow: hidden; bottom: 0; right: 4%; gap: 0; box-shadow: var(--shadow-float); }
 .collage__seal img { max-width: none; width: 100%; display: block; border-radius: 8%; }
 .collage__seal span { display: none; }
-.btn--gold { color: var(--navy-deep); }
-.btn--gold:hover { background: var(--gold-d); border-color: var(--gold-d); color: var(--navy-deep); }
 .collage__seal { border-radius: 12%; } .collage__seal img { border-radius: 0; }
 
 .collage__seal { width: auto; padding: 0.35rem; border: 0; }
@@ -538,7 +534,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .hdr .nav .mega a.mega__all { font-weight: 600; margin-top: var(--sp-2); }
 .mega__aside { background: var(--cream); padding: var(--sp-6); border-radius: var(--radius-m); }
 .mega__aside p { margin-top: var(--sp-3); }
-.hdr .nav .mega__aside .btn { margin-top: var(--sp-5); font-size: var(--fs-s); font-weight: 600; color: var(--navy-deep); }
+.hdr .nav .mega__aside .btn { margin-top: var(--sp-5); font-size: var(--fs-s); font-weight: 600; }
 @media (max-width: 1024px) {
   .hdr { position: sticky; top: 0; z-index: 2; background: var(--navy); }
   .hdr.is-stuck { position: sticky; }
