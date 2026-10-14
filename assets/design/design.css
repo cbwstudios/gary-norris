@@ -699,3 +699,8 @@ html.modal-open { overflow: hidden; }
   body:has(.callbar) { padding-bottom: calc(var(--sp-3) * 2 + 3.2rem); }
   .modal__scroll { padding: var(--sp-6) var(--sp-5); }
 }
+
+/* Why Choose on the service pages (14 Oct): the three points as a checklist, not headings */
+.checks { display: flex; flex-direction: column; gap: var(--sp-4); }
+.checks li { display: flex; align-items: flex-start; gap: var(--sp-3); font-weight: 500; color: var(--ink); line-height: 1.5; max-width: 56ch; }
+.checks .point__check { margin-top: 0.2em; }
