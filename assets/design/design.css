@@ -631,3 +631,8 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .results-band--stacked .results-band__text { max-width: 56rem; }
 .reviews { color: var(--body); }
 .about .wrap > .frame { order: 2; }
+
+/* A tall photograph beside a text column on desktop; the wide picture once the columns stack (Christian, 14 Oct) */
+.frame--tall { aspect-ratio: 2 / 3; }
+.frame picture { position: absolute; inset: 0; } .frame picture img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1024px) { .frame--tall { aspect-ratio: 3 / 2; } }
