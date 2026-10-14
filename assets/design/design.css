@@ -648,3 +648,18 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .brief__head .pcard__icon { flex: 0 0 auto; background: var(--cream); }
 .brief .prose { max-width: none; }
 @media (max-width: 1024px) { .cols--text-photo { grid-template-columns: minmax(0, 1fr); } .frame--portrait { aspect-ratio: 3 / 2; width: 100%; margin-left: 0; } .brief { grid-template-columns: minmax(0, 1fr); gap: var(--sp-4); } }
+
+/* Editorial touches on section three (Christian, 14 Oct: be creative): a gold offset frame behind the portrait, a faint
+   watermark of the page's icon on the cream ground, and the briefs on a dotted timeline through their icons */
+.section--wm { position: relative; overflow: clip; }
+.section__wm { position: absolute; right: -4rem; bottom: -4rem; width: 28rem; height: 28rem; opacity: 0.05; pointer-events: none; --icon-1: var(--ink); --icon-2: var(--ink); }
+.section__wm .icon { width: 100%; height: 100%; }
+.frame--editorial { overflow: visible; }
+.frame--editorial::before { content: ""; position: absolute; inset: var(--sp-4) calc(-1 * var(--sp-4)) calc(-1 * var(--sp-4)) var(--sp-4); border: 2px solid var(--gold); border-radius: var(--radius-m); z-index: 0; }
+.frame--editorial img, .frame--editorial picture { z-index: 1; border-radius: var(--radius-m); overflow: hidden; }
+.briefs--line { position: relative; }
+.briefs--line::before { content: ""; position: absolute; left: calc(5.125rem / 2 - 1px); top: var(--sp-8); bottom: var(--sp-8); border-left: 2px dotted var(--gold); }
+.briefs--line .brief { border: 0; }
+.briefs--line .brief__head { position: relative; }
+.briefs--line .pcard__icon { position: relative; z-index: 1; box-shadow: 0 0 0 0.5rem var(--white); }
+@media (max-width: 1024px) { .section__wm { width: 16rem; height: 16rem; } .frame--editorial::before { display: none; } .briefs--line::before { display: none; } .briefs--line .brief { border-top: 1px solid var(--line); } }
