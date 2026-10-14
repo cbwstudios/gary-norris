@@ -663,3 +663,8 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .briefs--line .brief__head { position: relative; }
 .briefs--line .pcard__icon { position: relative; z-index: 1; box-shadow: 0 0 0 0.5rem var(--white); }
 @media (max-width: 1024px) { .section__wm { width: 16rem; height: 16rem; } .frame--editorial::before { display: none; } .briefs--line::before { display: none; } .briefs--line .brief { border-top: 1px solid var(--line); } }
+
+/* Briefs rows (Christian, 14 Oct): the paragraphs start level with the top of the title on desktop; nothing extra when stacked */
+.brief__head { align-items: flex-start; }
+@media (min-width: 1025px) { .brief__head h3 { padding-top: 0.2rem; } }
+@media (max-width: 1024px) { .brief__head { align-items: center; } }
