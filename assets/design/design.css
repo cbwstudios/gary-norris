@@ -636,3 +636,15 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .frame--tall { aspect-ratio: 2 / 3; }
 .frame picture { position: absolute; inset: 0; } .frame picture img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 1024px) { .frame--tall { aspect-ratio: 3 / 2; } }
+
+/* ---------- Service section three, redrawn (Christian, 14 Oct): text two thirds, narrow portrait photograph; the briefs as rows ---------- */
+.cols--text-photo { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-l); align-items: center; }
+.frame--portrait { aspect-ratio: 4 / 5; width: min(100%, 30rem); margin-left: auto; }
+.briefs { display: flex; flex-direction: column; }
+.brief { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gap-l); align-items: start; padding-block: var(--sp-8); border-top: 1px solid var(--line); }
+.brief:last-child { border-bottom: 1px solid var(--line); }
+.brief__head { display: flex; align-items: center; gap: var(--sp-5); }
+.brief__head h3 { font-family: var(--font-serif); font-weight: 600; font-size: var(--fs-2xl); line-height: 1.15; color: var(--ink); }
+.brief__head .pcard__icon { flex: 0 0 auto; background: var(--cream); }
+.brief .prose { max-width: none; }
+@media (max-width: 1024px) { .cols--text-photo { grid-template-columns: minmax(0, 1fr); } .frame--portrait { aspect-ratio: 3 / 2; width: 100%; margin-left: 0; } .brief { grid-template-columns: minmax(0, 1fr); gap: var(--sp-4); } }
