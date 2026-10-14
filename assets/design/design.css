@@ -711,3 +711,4 @@ html.modal-open { overflow: hidden; }
 /* FAQ on the service pages (Christian, 14 Oct): one column, the boxes full width under the heading */
 .faq-boxes--wide { padding-top: 0; }
 .faq-boxes--wide summary { font-size: var(--fs-l); }
+.faq2__top .btn { flex: 0 0 auto; white-space: nowrap; }
