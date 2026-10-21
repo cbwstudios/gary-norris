@@ -778,7 +778,7 @@ a.scard--article h3 { margin: var(--sp-4) var(--sp-6) 0; font-family: var(--font
 .contact__form h2 { color: var(--on-navy); font-size: var(--fs-2xl); }
 .contact__form .head__lede { color: var(--on-navy-soft); margin-block: var(--sp-2) var(--sp-6); } .contact__form .head__lede a { color: var(--on-navy); }
 .contact__form .consult label { color: var(--on-navy); } .contact__form .consult__consent, .contact__form .consult__fine { color: var(--on-navy-soft); }
-.contact__map .map { width: 100%; height: 100%; min-height: 28rem; aspect-ratio: auto; border: 0; border-radius: var(--radius-m); background: var(--navy); }
+.contact__map { min-height: 28rem; display: flex; } .contact__map .ph, .contact__map .map { width: 100%; height: 100%; min-height: 28rem; margin: 0; border-radius: var(--radius-m); display: grid; place-items: center; }
 @media (max-width: 1024px) {
   .sgrid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cols--article { grid-template-columns: minmax(0, 1fr); } .author { position: static; flex-direction: row; align-items: center; flex-wrap: wrap; } .author__photo { width: 5rem; }
