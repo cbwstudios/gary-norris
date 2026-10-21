@@ -746,7 +746,7 @@ a.scard--article { padding: 0; overflow: hidden; gap: 0; padding-bottom: var(--s
 .abadge span { font-size: var(--fs-xs); letter-spacing: 0.12em; text-transform: uppercase; }
 .scard__label { display: block; margin: var(--sp-5) var(--sp-6) 0; padding-bottom: var(--sp-3); border-bottom: 1px solid var(--line); font-size: var(--fs-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 a.scard--article h3 { margin: var(--sp-4) var(--sp-6) 0; font-family: var(--font-serif); font-size: var(--fs-l); }
-.scard__excerpt { margin: var(--sp-3) var(--sp-6) 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.scard__excerpt { margin: var(--sp-3) var(--sp-6) 0; }   /* the written excerpt, whole; no clamp */
 .scard__more { margin: var(--sp-4) var(--sp-6) 0; font-weight: 600; color: var(--navy); }
 .ahero { position: relative; min-height: 32rem; display: flex; align-items: flex-end; overflow: hidden; background: var(--navy); }
 .ahero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
