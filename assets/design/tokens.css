@@ -29,6 +29,7 @@
   /* Space: one scale, used for gaps, padding and section rhythm */
   --sp-1: 0.25rem;  --sp-2: 0.5rem;  --sp-3: 0.75rem;  --sp-4: 1rem;  --sp-5: 1.5rem;  --sp-6: 2rem;
   --sp-7: 2.5rem;   --sp-8: 3rem;    --sp-9: 4rem;     --sp-10: 5rem; --sp-11: 6rem;  --sp-12: 7.5rem;
+  --hdr-h: 6rem;   /* the header bar's height; what sticks below it clears it (Christian, 28 Oct) */
   --section-y: clamp(4.5rem, 3rem + 6vw, 7.5rem);        /* 72 to 120 */
   --section-y-s: clamp(3rem, 2rem + 4vw, 5rem);
   --gap: clamp(1.5rem, 1rem + 2.5vw, 3rem);               /* column gap, 24 to 48 */
