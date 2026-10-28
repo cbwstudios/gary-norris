@@ -768,6 +768,12 @@ a.scard--article h3 { margin: var(--sp-4) var(--sp-6) 0; font-family: var(--font
 .pager a:hover strong { color: var(--gold-d); }
 .pager__next { text-align: right; margin-left: auto; }
 .sgrid + .row { margin-top: var(--sp-7); }
+
+/* ---------- About (Christian, 28 Oct): the typed signature block and the full-quote review card ---------- */
+.signature { display: flex; flex-direction: column; gap: var(--sp-1); margin-top: var(--sp-3); }
+.signature b { font-family: var(--font-serif); font-weight: 600; font-size: var(--fs-2xl); line-height: var(--lh-tight); color: var(--ink); }
+.signature span { font-size: var(--fs-s); color: var(--muted); }
+.rcard--full .rcard__text { display: block; -webkit-line-clamp: none; overflow: visible; }
 .contact { padding-block: var(--sp-9) var(--section-y); }
 .contact__card { position: relative; z-index: 1; background: var(--white); color: var(--body); border-radius: var(--radius-l); box-shadow: var(--shadow-card); padding: var(--sp-7) var(--sp-8); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
 .contact__item { display: flex; gap: var(--sp-4); align-items: center; }
