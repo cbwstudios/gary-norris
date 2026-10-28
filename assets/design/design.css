@@ -12,6 +12,7 @@ img, svg, iframe { display: block; max-width: 100%; }
 a { color: var(--link); text-decoration: none; }
 .prose a { text-decoration: underline; text-underline-offset: 0.15em; }
 h1, h2 { font-family: var(--font-serif); font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+p { text-wrap: pretty; } h1, h2, h3 { text-wrap: balance; }   /* no orphans (Christian, 28 Oct; ledger row 46) */
 h1 { font-size: var(--fs-4xl); line-height: var(--lh-tight); }
 h2 { font-size: var(--fs-3xl); line-height: var(--lh-head); }
 h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--ink); }
