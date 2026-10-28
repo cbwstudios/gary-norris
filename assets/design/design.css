@@ -770,10 +770,25 @@ a.scard--article h3 { margin: var(--sp-4) var(--sp-6) 0; font-family: var(--font
 .sgrid + .row { margin-top: var(--sp-7); }
 
 /* ---------- About (Christian, 28 Oct): the typed signature block and the full-quote review card ---------- */
+.cols--photo-text { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gap-l); align-items: center; }
+.cols--photo-text .frame--portrait { margin-left: 0; margin-right: auto; }
 .signature { display: flex; flex-direction: column; gap: var(--sp-1); margin-top: var(--sp-3); }
-.signature b { font-family: var(--font-serif); font-weight: 600; font-size: var(--fs-2xl); line-height: var(--lh-tight); color: var(--ink); }
+.signature b { font-weight: 600; font-size: var(--fs-l); color: var(--ink); }
 .signature span { font-size: var(--fs-s); color: var(--muted); }
-.rcard--full .rcard__text { display: block; -webkit-line-clamp: none; overflow: visible; }
+.signature__img { width: 11rem; height: auto; margin-top: var(--sp-3); }
+.cred { background: var(--white); border-radius: var(--radius-m); padding: var(--sp-6); box-shadow: var(--shadow-card); }
+.cred h3 { padding-bottom: var(--sp-4); border-bottom: 1px solid var(--line); }
+.cred__list li { padding-block: var(--sp-4); border-bottom: 1px solid var(--line); color: var(--ink); line-height: 1.5; }
+.cred__list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.testi__panel { background: var(--on-navy-panel); border-radius: var(--radius-m); padding: var(--sp-8) var(--sp-7) var(--sp-6); text-align: center; }
+.testi__slide { display: none; margin: 0; }
+.testi__slide.is-active { display: block; }
+.testi__quote { margin: 0; font-size: var(--fs-l); line-height: var(--lh-body); color: var(--on-navy); }
+.testi__name { margin-top: var(--sp-5); font-weight: 600; color: var(--on-navy); }
+.testi__dots { display: flex; justify-content: center; gap: var(--sp-2); margin-top: var(--sp-6); }
+.testi__dot { width: 0.6rem; height: 0.6rem; padding: 0; border: 0; border-radius: var(--radius-full); background: var(--on-navy-soft); cursor: pointer; transition: width 0.2s ease, background-color 0.2s ease; }
+.testi__dot.is-active { width: 1.6rem; background: var(--gold); }
+@media (max-width: 1024px) { .cols--photo-text { grid-template-columns: minmax(0, 1fr); } .cols--photo-text .frame--portrait { width: 100%; } .cols--split { grid-template-columns: minmax(0, 1fr); } }
 .contact { padding-block: var(--sp-9) var(--section-y); }
 .contact__card { position: relative; z-index: 1; background: var(--white); color: var(--body); border-radius: var(--radius-l); box-shadow: var(--shadow-card); padding: var(--sp-7) var(--sp-8); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
 .contact__item { display: flex; gap: var(--sp-4); align-items: center; }
