@@ -623,7 +623,7 @@ a.scard:hover .scard__arrow { color: var(--navy); }
    container width: no text measure, no column gap or gutter padding left over from the two-column layout. ---------- */
 @media (max-width: 1024px) {
   .measure, .prose, .head__lede, .about__text .lede, .point p, .checks li, .stack > .lede, .step p, .steps-band__left p.lede,
-  .hero3__text, .hero3__lede, .results-band--stacked .results-band__text, .fcard p, .tcard p, .ftr-bar .disclaimer { max-width: none; }
+  .hero3__text, .hero3__lede, .fcard p, .ftr-bar .disclaimer { max-width: none; }
   .faq2__media { padding-right: 0; }
   .band-split__inner { width: 100%; padding-left: 0; padding-right: 0; }
   .head { gap: var(--sp-4); }
