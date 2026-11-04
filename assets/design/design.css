@@ -351,7 +351,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .fcard__clip { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .fcard__wm { position: absolute; right: -0.75rem; bottom: -0.75rem; width: 6.5rem; height: 6.5rem; color: var(--ink); opacity: 0.06; --icon-1: var(--ink); --icon-2: var(--ink); }
 .feat .cols { margin-top: 3.1rem; }
-@media (max-width: 1024px) { .feat .cols { gap: calc(var(--sp-5) + 3.1rem); } }
+@media (max-width: 1024px) { .feat .cols { gap: calc((var(--sp-5) + 3.1rem) / 2); } }   /* stacked: half the gap (Christian, 4 Nov) */
 .fcard__icon .stars--one { font-size: 2.4rem; letter-spacing: 0; line-height: 1; }
 .ph-inline { font-size: var(--fs-xs); color: var(--gold-d); margin-left: var(--sp-1); }
 
