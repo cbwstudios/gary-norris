@@ -342,6 +342,7 @@ h3 { font-size: var(--fs-xl); font-weight: 600; line-height: 1.3; color: var(--i
 .pcard__icon .icon { width: var(--pcard-icon); height: var(--pcard-icon); color: var(--gold); }
 .pcard h3 { font-family: var(--font-serif); font-weight: 600; font-size: var(--pcard-title); line-height: 1.2; color: var(--ink); margin-top: var(--sp-2); }
 .pcard h3 a { color: inherit; } .pcard h3 a:hover { color: var(--gold-d); }
+a.pcard { color: inherit; text-decoration: none; } a.pcard:hover h3 { color: var(--gold-d); }   /* the whole card as the link (Christian, 4 Nov) */
 .pcard p { color: var(--muted); font-size: var(--pcard-text); line-height: 1.7; }
 .pcloud { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-9); }
 .pcloud a { display: inline-block; padding: var(--sp-2) var(--sp-5); border: var(--line-w) solid var(--line); border-radius: var(--radius-full); color: var(--ink); font-weight: 600; font-size: var(--fs-s); }
