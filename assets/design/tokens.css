@@ -48,4 +48,27 @@
   --bar-w: 4px;             /* the gold bar beside headings */
   --disc: 4.5rem;           /* the circle behind an icon */
   --icon: 1.75rem;
+
+  /* ---- Sizes and spaces named for their use (the sweep of 4 Nov; Christian): every value below was a literal in design.css ---- */
+  --hairline: 1px;  --line-w: 1.5px;  --line-2: 2px;  --lift: -4px;  --offscreen: -999rem;
+  --wordmark-h: 2.6rem;  --wordmark-h-ftr: 3rem;  --wordmark-h-plain: 2.75rem;  --track-wordmark: 0.02em;
+  --hdr-ring: 3.1rem;  --ring-icon: 1.2rem;  --hdr-call-pad: 0.8em 1.6em;  --hdr-call-icon-s: 1.3rem;  --menu-btn: 2.75rem;  --menu-icon: 1.4rem;  --caret: 0.45em;  --caret-lift: 0.15em;  --mega-lift: -0.5rem;
+  --btn-pad: 0.95em 1.9em;  --btn-pad-canun: 1em 2.8em;  --btn-pad-call: 1em 1.8em;  --btn-call-icon: 1.1rem;
+  --hero-h: clamp(44rem, 70vw, 62.5rem);  --hero-text-top: 6rem;  --hero-text-w: 44rem;  --hero-lede-w: 40rem;  --hero-figure-h: 36rem;  --hero-figure-w-s: 28rem;  --hero-circle: 37.5rem;
+  --dots-a-w: 14rem;  --dots-a-h: 20rem;  --dots-b: 9rem;  --dot-grid: 14px;  --dot-r: 1.5px;  --dot-r-edge: 1.6px;  --mask-ink: #000;  --bullet: 0.5em;  --bullet-gap: 0.6em;
+  --fcard-lift: 3.1rem;  --fcard-pad: 3.125rem 2.5rem;  --fcard-disc: 6.25rem;  --fcard-ring-inset: 0.4rem;  --fcard-icon: 2.5rem;  --fcard-title: 1.2rem;  --fcard-wm: 6.5rem;  --fcard-wm-off: -0.75rem;  --measure-fcard: 30ch;
+  --star-big: 2.4rem;  --star-wm: 6rem;  --star-wm-x: -0.5rem;  --star-wm-y: -1.2rem;  --track-stars: 0.1em;  --track-star-disc: 0.05em;
+  --shadow-soft: 0 5px 15px rgba(15, 27, 45, 0.10);
+  --pcard-pad: 3.125rem;  --pcard-disc: 5.125rem;  --pcard-icon: 2.25rem;  --pcard-title: 1.875rem;  --pcard-text: 1.125rem;  --pcard-disc-bg: #F5F5F7;
+  --check: 1.4rem;  --check-glyph: 0.85rem;  --measure-56: 56ch;  --measure-step: 52ch;  --lede-top: 0.35em;  --bar-inset: 0.1em;
+  --step-n: 3.8rem;  --step-n-fs: 1.25rem;  --step-line-top: 1rem;
+  --badge-ring: 8.5rem;  --badge-icon: 2.2rem;  --caption-w: 18rem;  --qicon: 2.6rem;  --faq-plus: 1.6rem;
+  --ftr-icon: 1.2rem;  --ftr-icon-lift: 0.2em;  --ftr-line-icon: 2.25rem;  --map-h: 20rem;  --disclaimer-w: 70rem;
+  --band-media-h: 26rem;  --frame-w: 30rem;  --wm-size: 28rem;  --wm-size-s: 16rem;  --wm-off: -4rem;  --brief-icon-ring: 0.5rem;  --brief-top: 0.2rem;
+  --scrim: rgba(22, 33, 58, 0.72);  --modal-w: 38rem;  --modal-x: 2.5rem;  --scrollbar-w: 6px;  --consent-top: 0.25em;  --callbar-h: 3.2rem;
+  --scard-arrow: 1.25rem;  --abadge-w: 3.5rem;  --ahero-h: 32rem;  --ahero-h-s: 22rem;  --author-photo: 5rem;  --track-label: 0.12em;  --track-small: 0.04em;  --track-tight: -0.01em;
+  --underline-off: 0.15em;  --underline-off-l: 0.18em;
+  --sig-w: 11rem;  --dot: 0.6rem;  --dot-active: 1.6rem;  --contact-map-h: 24rem;  --ph-icon: 3.5rem;
+  --collage-edge: 6px;  --collage-edge-l: 10px;  --collage-w: 32rem;  --seal-w: 11rem;  --seal-edge: 5px;  --seal-pad: 0.35rem;  --seal-radius: 14px;  --seal-radius-l: 18px;  --seal-img: 180px;  --seal-img-radius: 10px;  --track-seal: 0.06em;
+  --glass-top: rgba(255,255,255,0.22);  --glass-top-plain: rgba(255,255,255,0.16);  --glass-mid: rgba(255,255,255,0.08);  --glass-low: rgba(255,255,255,0.14);  --glass-edge: rgba(255,255,255,0.28);  --glass-hi: rgba(255,255,255,0.35);  --glass-shade: rgba(255,255,255,0.06);  --glass-sheen: rgba(255,255,255,0.18);  --glass-clear: rgba(255,255,255,0);  --glass-shadow: 0 8px 24px rgba(0,0,0,0.25);  --glass-blur: 10px;
 }
