@@ -1,26 +1,42 @@
-/* Prototype only (Christian, 5 Nov): the review button on every prototype page and the website map at /map/.
+/* Prototype only (Christian, 5 Nov): the review tab on every prototype page and the website map at /map/.
    Never part of the WordPress build: these are not Bricks global classes and no blueprint links this file.
-   Reads tokens.css only, like design.css; no literal colour, size or space appears below. */
+   Colours, type and spaces are the site's tokens. The few measures that exist only here (the map's column, the tree's
+   columns, the panel's width) are the local variables below, in one place; they are not design tokens and never go to Bricks. */
+.review-bar, .mapdoc { --rv-panel: 12rem; --map-w: 54rem; --tree-status: 9rem; --tree-doc: 10rem; --tree-step: var(--sp-6); --tree-tick: var(--sp-5); }
 
-/* ---------- the review button: fixed, bottom right, gold on navy ---------- */
-.review-bar { position: fixed; right: var(--gutter); bottom: var(--sp-5); z-index: 39; display: grid; justify-items: end; gap: var(--sp-2); }
-.review-bar a { font-family: var(--font-sans); font-weight: 600; line-height: 1.2; color: var(--gold); background: var(--navy); border-radius: var(--radius-s); box-shadow: var(--shadow-float); }
-.review-bar a:hover, .review-bar a:focus-visible { background: var(--navy-deep); color: var(--gold-l); }
-.review-bar__btn { font-size: var(--fs-s); padding: var(--sp-3) var(--sp-5); border: var(--line-w) solid var(--gold); }
-.review-bar__map { font-size: var(--fs-xs); padding: var(--sp-2) var(--sp-3); }
-@media (max-width: 1024px) {
-  .review-bar { bottom: calc(var(--sp-3) * 3 + var(--callbar-h)); }   /* clear of the phone call bar */
-}
+/* ---------- the review tab: docked on the right edge, near the middle; the panel slides out of it ---------- */
+.review-bar { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 45; display: flex; align-items: stretch; font-family: var(--font-sans); }
+.review-bar__tab { writing-mode: vertical-rl; transform: rotate(180deg); margin: 0; padding: var(--sp-3) var(--line-2); border: 0; border-radius: 0 var(--radius-s) var(--radius-s) 0; background: var(--navy); color: var(--gold); font: inherit; font-size: var(--fs-xs); font-weight: 600; line-height: 1; letter-spacing: var(--track-small); cursor: pointer; box-shadow: var(--shadow-soft); }
+.review-bar__tab:hover, .review-bar__tab:focus-visible, .review-bar.is-open .review-bar__tab { background: var(--navy-deep); color: var(--gold-l); }
+.review-bar__panel { display: grid; align-content: center; gap: var(--sp-2); max-width: 0; overflow: hidden; visibility: hidden; white-space: nowrap; background: var(--navy); border-radius: var(--radius-s) 0 0 var(--radius-s); box-shadow: var(--shadow-float); transition: max-width 0.2s ease, visibility 0s linear 0.2s; }
+.review-bar.is-open .review-bar__panel { max-width: var(--rv-panel); visibility: visible; padding: var(--sp-3) var(--sp-4); transition: max-width 0.2s ease; }
+.review-bar__panel a { font-size: var(--fs-s); font-weight: 600; line-height: 1.2; color: var(--gold); }
+.review-bar__panel a:hover, .review-bar__panel a:focus-visible { color: var(--gold-l); text-decoration: underline; text-underline-offset: var(--underline-off); }
 
-/* ---------- the website map: one column, plain type ---------- */
-.sitemap { display: grid; gap: var(--sp-9); }
-.sitemap__group h2 { font-family: var(--font-sans); font-size: var(--fs-l); font-weight: 600; letter-spacing: 0; color: var(--ink); padding-bottom: var(--sp-3); border-bottom: var(--line-2) solid var(--gold); }
-.sitemap__row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--sp-5); align-items: baseline; padding: var(--sp-4) 0; border-bottom: var(--hairline) solid var(--line); }
-.sitemap__name { font-size: var(--fs-l); font-weight: 600; color: var(--ink); }
-.sitemap__name:hover { color: var(--link); }
+/* ---------- the website map: a bare page, one narrow column on white ---------- */
+.mapdoc { background: var(--white); }
+.mapdoc__col { width: min(100% - 2 * var(--gutter), var(--map-w)); margin-inline: auto; padding-block: var(--sp-8) var(--sp-11); }
+.mapdoc__mark { display: flex; flex-direction: column; font-family: var(--font-serif); font-weight: 600; font-variant: small-caps; line-height: var(--lh-tight); color: var(--navy); margin-bottom: var(--sp-9); }
+.mapdoc__mark .wordmark__name { font-size: var(--fs-xl); }
+.mapdoc h1 { font-size: var(--fs-3xl); margin-bottom: var(--sp-4); }
+.mapdoc__lede { max-width: var(--measure); margin-bottom: var(--sp-8); }
+
+/* the tree: lines and indents only. Each nested list is one step in; each item draws its own piece of the trunk and a tick. */
+.tree, .tree ul { list-style: none; margin: 0; padding: 0; }
+.tree ul { padding-left: var(--tree-step); margin-left: var(--sp-2); }
+.tree li { position: relative; }
+.tree ul > li::before { content: ""; position: absolute; left: calc(-1 * var(--tree-step)); top: 0; bottom: 0; border-left: var(--hairline) solid var(--muted); }
+.tree ul > li:last-child::before { bottom: auto; height: var(--tree-tick); }
+.tree ul > li::after { content: ""; position: absolute; left: calc(-1 * var(--tree-step)); top: var(--tree-tick); width: calc(var(--tree-step) - var(--sp-2)); border-top: var(--hairline) solid var(--muted); }
+.tree__row { display: grid; grid-template-columns: minmax(0, 1fr) var(--tree-status) var(--tree-doc); gap: var(--sp-4); align-items: baseline; padding: var(--sp-3) 0; }
+.tree__label { font-family: var(--font-sans); font-size: var(--fs-m); font-weight: 600; letter-spacing: 0; line-height: var(--lh-body); color: var(--ink); padding: var(--sp-3) 0; }
+.tree > li > .tree__row .sitemap__name, .tree > li > ul > li > .tree__row .sitemap__name { font-weight: 600; }
+.sitemap__name, .sitemap__doc, .sitemap__log a { color: var(--link); text-decoration: underline; text-underline-offset: var(--underline-off); text-decoration-thickness: var(--hairline); }
+.sitemap__name:hover, .sitemap__doc:hover, .sitemap__log a:hover { color: var(--navy); }
 .sitemap__status { color: var(--muted); }
-.sitemap__log { font-size: var(--fs-l); }
+.sitemap__log { margin-top: var(--sp-8); padding-top: var(--sp-5); border-top: var(--hairline) solid var(--line); }
 @media (max-width: 1024px) {
-  .sitemap { gap: var(--sp-8); }
-  .sitemap__row { grid-template-columns: minmax(0, 1fr); gap: var(--sp-1); }
+  .mapdoc .tree { --tree-step: var(--sp-5); }
+  .tree__row { grid-template-columns: minmax(0, 1fr); gap: 0; }   /* name, status, link, stacked; the indents stay */
+  .tree__row > span:empty { display: none; }
 }
