@@ -3,7 +3,7 @@
    Colours, type and spaces are the site's tokens. The few measures that exist only here (the map's column, the tree's
    columns, the panel's width) are the local variables below, in one place; they are not design tokens and never go to Bricks.
    The one colour that is not a site token is the complete pill's green (Christian, 11 Nov): the site has no green. */
-.review-bar, .mapdoc { --rv-panel: 12rem; --map-w: 54rem; --tree-status: 10rem; --tree-doc: 10rem; --tree-step: var(--sp-6); --tree-tick: var(--sp-5); --pill-green: #1F6B3A; --pill-green-bg: #E3F1E6; }
+.review-bar, .mapdoc { --rv-panel: 12rem; --map-w: 54rem; --tree-status: 10rem; --tree-doc: 1.5rem; --tree-icon: 1.1em; --tree-word: 0.35em; --tree-step: var(--sp-6); --tree-tick: var(--sp-5); --pill-green: #1F6B3A; --pill-green-bg: #E3F1E6; }
 
 /* ---------- the review tab: docked on the right edge, near the middle; the panel slides out of it ---------- */
 .review-bar { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 45; display: flex; align-items: stretch; font-family: var(--font-sans); }
@@ -29,11 +29,18 @@
 .tree ul > li::before { content: ""; position: absolute; left: calc(-1 * var(--tree-step)); top: 0; bottom: 0; border-left: var(--hairline) solid var(--muted); }
 .tree ul > li:last-child::before { bottom: auto; height: var(--tree-tick); }
 .tree ul > li::after { content: ""; position: absolute; left: calc(-1 * var(--tree-step)); top: var(--tree-tick); width: calc(var(--tree-step) - var(--sp-2)); border-top: var(--hairline) solid var(--muted); }
-.tree__row { display: grid; grid-template-columns: minmax(0, 1fr) var(--tree-status) var(--tree-doc); gap: var(--sp-4); align-items: baseline; padding: var(--sp-3) 0; }
+.tree__row { display: grid; grid-template-columns: auto minmax(0, 1fr) var(--tree-status) var(--tree-doc); align-items: baseline; padding: var(--sp-3) 0; }   /* name, kind, pill, icon */
 .tree__label { font-family: var(--font-sans); font-size: var(--fs-m); font-weight: 600; letter-spacing: 0; line-height: var(--lh-body); color: var(--ink); padding: var(--sp-3) 0; }
-.tree > li > .tree__row .sitemap__name, .tree > li > ul > li > .tree__row .sitemap__name { font-weight: 600; }
-.sitemap__name, .sitemap__doc, .sitemap__log a { color: var(--link); text-decoration: underline; text-underline-offset: var(--underline-off); text-decoration-thickness: var(--hairline); }
-.sitemap__name:hover, .sitemap__doc:hover, .sitemap__log a:hover { color: var(--navy); }
+.tree > li > .tree__row .sitemap__name { font-weight: 600; }   /* the seven top rows; their children are regular */
+.tree > li + li { margin-top: var(--sp-5); }
+.sitemap__name, .sitemap__log a { color: var(--link); text-decoration: underline; text-underline-offset: var(--underline-off); text-decoration-thickness: var(--hairline); }
+.sitemap__name:hover, .sitemap__log a:hover { color: var(--navy); }
+/* the page's kind after its name (Christian, 11 Nov): muted words, one step down, never a pill */
+.sitemap__type { padding-inline: var(--tree-word) var(--sp-4); font-size: var(--fs-s); font-weight: 400; color: var(--muted); }
+/* the Doc link is the duo document icon (Christian, 11 Nov): link blue with the gold accent, navy on hover */
+.sitemap__doc { align-self: center; display: inline-flex; --icon-1: var(--link); }
+.sitemap__doc:hover { --icon-1: var(--navy); }
+.sitemap__doc .icon { width: var(--tree-icon); height: var(--tree-icon); }
 /* the round pill (Christian, 11 Nov): small, rounded, one line. Green complete, gold with you, grey later. */
 .pill { justify-self: start; display: inline-block; padding: var(--sp-1) var(--sp-3); border-radius: var(--radius-full); font-size: var(--fs-xs); font-weight: 600; line-height: 1.4; letter-spacing: var(--track-small); white-space: nowrap; }
 .pill--complete { background: var(--pill-green-bg); color: var(--pill-green); }
@@ -42,7 +49,10 @@
 .sitemap__log { margin-top: var(--sp-8); padding-top: var(--sp-5); border-top: var(--hairline) solid var(--line); }
 @media (max-width: 1024px) {
   .mapdoc .tree { --tree-step: var(--sp-5); }
-  .tree__row { grid-template-columns: minmax(0, 1fr); gap: 0; }   /* name, status, link, stacked; the indents stay */
+  .tree__row { display: block; }   /* the name and its kind wrap together; the pill and the icon share the next line; the indents stay */
   .tree__row > span:empty { display: none; }
-  .tree__row .pill { margin-block: var(--sp-1); }
+  .sitemap__type { padding-right: 0; }
+  .sitemap__type::after { content: ""; display: block; }
+  .tree__row .pill { margin-block: var(--sp-1); vertical-align: middle; }
+  .sitemap__doc { margin-left: var(--sp-3); vertical-align: middle; }
 }
