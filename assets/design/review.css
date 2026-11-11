@@ -20,7 +20,7 @@
 .mapdoc__mark { display: flex; flex-direction: column; font-family: var(--font-serif); font-weight: 600; font-variant: small-caps; line-height: var(--lh-tight); color: var(--navy); margin-bottom: var(--sp-9); }
 .mapdoc__mark .wordmark__name { font-size: var(--fs-xl); }
 .mapdoc h1 { font-size: var(--fs-3xl); margin-bottom: var(--sp-4); }
-.mapdoc__lede { max-width: var(--measure); margin-bottom: var(--sp-8); }
+.mapdoc__lede { max-width: none; margin-bottom: var(--sp-8); }   /* as wide as the tree under it (Christian, 11 Nov) */
 
 /* the tree: lines and indents only. Each nested list is one step in; each item draws its own piece of the trunk and a tick. */
 .tree, .tree ul { list-style: none; margin: 0; padding: 0; }
