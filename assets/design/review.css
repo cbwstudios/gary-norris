@@ -1,8 +1,9 @@
 /* Prototype only (Christian, 5 Nov): the review tab on every prototype page and the website map at /map/.
    Never part of the WordPress build: these are not Bricks global classes and no blueprint links this file.
    Colours, type and spaces are the site's tokens. The few measures that exist only here (the map's column, the tree's
-   columns, the panel's width) are the local variables below, in one place; they are not design tokens and never go to Bricks. */
-.review-bar, .mapdoc { --rv-panel: 12rem; --map-w: 54rem; --tree-status: 9rem; --tree-doc: 10rem; --tree-step: var(--sp-6); --tree-tick: var(--sp-5); }
+   columns, the panel's width) are the local variables below, in one place; they are not design tokens and never go to Bricks.
+   The one colour that is not a site token is the complete pill's green (Christian, 11 Nov): the site has no green. */
+.review-bar, .mapdoc { --rv-panel: 12rem; --map-w: 54rem; --tree-status: 10rem; --tree-doc: 10rem; --tree-step: var(--sp-6); --tree-tick: var(--sp-5); --pill-green: #1F6B3A; --pill-green-bg: #E3F1E6; }
 
 /* ---------- the review tab: docked on the right edge, near the middle; the panel slides out of it ---------- */
 .review-bar { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 45; display: flex; align-items: stretch; font-family: var(--font-sans); }
@@ -33,10 +34,15 @@
 .tree > li > .tree__row .sitemap__name, .tree > li > ul > li > .tree__row .sitemap__name { font-weight: 600; }
 .sitemap__name, .sitemap__doc, .sitemap__log a { color: var(--link); text-decoration: underline; text-underline-offset: var(--underline-off); text-decoration-thickness: var(--hairline); }
 .sitemap__name:hover, .sitemap__doc:hover, .sitemap__log a:hover { color: var(--navy); }
-.sitemap__status { color: var(--muted); }
+/* the round pill (Christian, 11 Nov): small, rounded, one line. Green complete, gold with you, grey later. */
+.pill { justify-self: start; display: inline-block; padding: var(--sp-1) var(--sp-3); border-radius: var(--radius-full); font-size: var(--fs-xs); font-weight: 600; line-height: 1.4; letter-spacing: var(--track-small); white-space: nowrap; }
+.pill--complete { background: var(--pill-green-bg); color: var(--pill-green); }
+.pill--you { background: var(--gold); color: var(--navy-deep); }
+.pill--later { background: var(--navy-4); color: var(--body); }
 .sitemap__log { margin-top: var(--sp-8); padding-top: var(--sp-5); border-top: var(--hairline) solid var(--line); }
 @media (max-width: 1024px) {
   .mapdoc .tree { --tree-step: var(--sp-5); }
   .tree__row { grid-template-columns: minmax(0, 1fr); gap: 0; }   /* name, status, link, stacked; the indents stay */
   .tree__row > span:empty { display: none; }
+  .tree__row .pill { margin-block: var(--sp-1); }
 }
