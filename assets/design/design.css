@@ -716,3 +716,10 @@ a.scard--article h3 { margin: var(--sp-4) var(--sp-6) 0; font-family: var(--font
 .rblocks--one .rblock:first-child { padding: var(--sp-9) var(--sp-7); justify-content: center; }
 .rblocks--one .rblock:first-child .figure { font-size: var(--fs-4xl, var(--fs-3xl)); }
 @media (max-width: 640px) { .rblock--photo { aspect-ratio: 3 / 2; } }
+
+/* ---------- Round 6, 18 Nov (Christian) ---------- */
+/* the call card under What to Expect on the category page: the mega menu aside's box on the navy band, dark words, no wider than the lede */
+.steps-band .mega__aside { color: var(--body); max-width: var(--measure-56); }
+/* text beside a picture between the stacking point and 1280: the text wraps longer while the frame narrows, so there the
+   frame grows to the row's height (the tall file, cover) and the text governs the row; never shorter than its own shape */
+@media (min-width: 1025px) and (max-width: 1280px) { .cols > .frame--portrait { min-height: 100%; } }
